@@ -1,0 +1,10 @@
+.main-img {
+    text-align: center;
+    img {
+        height: 500px;
+        @include sm {
+            height: 45px;
+        }
+    }
+
+}
