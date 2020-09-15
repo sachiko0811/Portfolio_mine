@@ -1,0 +1,24 @@
+
+
+.about-title {
+    font-size: 18px;
+    font-weight: bold;
+        p {
+            font-size: 16px;
+        }
+}
+
+.about-links {
+    color: $basic-color;
+    font-size: 1.5rem;
+    padding: 15px;
+        i {
+            padding: 10px;
+        }
+}
+
+.about-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

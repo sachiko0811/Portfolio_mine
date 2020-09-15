@@ -3,8 +3,14 @@
     img {
         height: 500px;
         @include sm {
-            height: 45px;
+            height: 100%;
+            width: 100%;
         }
     }
 
+}
+
+.main-desc-p {
+    line-height: 0.5;
+    font-weight: bold;
 }

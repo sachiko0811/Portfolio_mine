@@ -1,0 +1,21 @@
+.btn-resume {
+    button {
+        font-weight: 200;
+        background: $background-basic;
+        padding: 10px 15px;
+        border-radius: 45px;
+        border: 1px solid $basic-color;
+        margin-right: 25px;
+    }
+}
+
+.btn-send-msg {
+    button {
+        font-weight: 200;
+        background: $basic-color;
+        padding: 10px 15px;
+        border-radius: 45px;
+        border: 1px solid $basic-color;
+        color: $background-basic;
+    }
+}

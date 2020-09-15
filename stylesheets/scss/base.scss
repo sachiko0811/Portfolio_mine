@@ -6,19 +6,25 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+    // background: $background-basic;
 }
 
 nav {
     li {
-        list-style: none a;
-        color: black;
-        text-decoration: none;
+        list-style: none;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        
     }
 }
+
 footer {
     text-align: center;
     margin: 0 auto;
 }
+
 // Small devices
 @mixin sm {
     @media (max-width: $screen-sm-min) {
@@ -28,14 +34,14 @@ footer {
 
 // Medium devices
 @mixin md {
-    @media (min-width: $screen-md-min) {
+    @media (max-width: $screen-md-min) {
         @content
     }
 }
 
 // Large devices
 @mixin lg {
-    @media (min-width: $screen-lg-min) {
+    @media (max-width: $screen-lg-min) {
         @content
     }
 }
