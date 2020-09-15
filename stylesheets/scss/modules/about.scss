@@ -12,9 +12,12 @@
     color: $basic-color;
     font-size: 1.5rem;
     padding: 15px;
-        i {
-            padding: 10px;
+        a &:visited {
+            color: $basic-color;
         }
+            i {
+                padding: 10px;
+            }
 }
 
 .about-btns {
