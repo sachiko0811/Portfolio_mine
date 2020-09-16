@@ -1,0 +1,35 @@
+#works-all {
+    padding: 5vh 10vw;
+}
+
+#works {
+    h1 {
+        text-align: center;
+        font-size: 18px;
+        padding: 5vh 0;
+    }
+}
+
+.works-work {
+    flex-wrap: wrap;
+    justify-content: center;
+        .works-work_work {
+            padding: 20px;
+        }
+}
+
+.gray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 2s;
+        &:hover {
+            -webkit-filter: grayscale(0);
+            -moz-filter: grayscale(0);
+            -ms-filter: grayscale(0);
+            -o-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+}

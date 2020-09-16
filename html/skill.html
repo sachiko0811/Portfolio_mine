@@ -7,13 +7,14 @@
     <title>My Skills</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/reset.css">
-    <!-- <link rel="stylesheet" href="../dist/css/style.css"> -->
+    <link rel="stylesheet" href="../dist/css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 
     <div id="container"></div>
 
+    <div id="skills-all">
     <div id="skills">
         <h1>My Skills</h1>
         <div class="skills-icon">
@@ -26,25 +27,31 @@
         </div>
     </div>
 
-    <div class="skills-detail">
-        <div class="skills-detail_languages">
+    <div class="skills-details">
+        
+        <div class="skills-detail_languages skills-detail">
+            <h3>LANGUAGES</h3>
             <p>HTML, CSS, SASS, JavaScript, jQuery, SQL</p>
         </div>
     
-        <div class="skills-detail_frameworks">
+        <div class="skills-detail_frameworks skills-detail">
+            <h3>FRAMEWORKS</h3>
             <p>React.js</p>
         </div>
 
-        <div class="skills-detail_tools">
+        <div class="skills-detail_tools skills-detail">
+            <h3>TOOLS</h3>
             <p>Git, MySQL, PhotoShop, illustrator, XD</p>
         </div>
 
+    </div>
     </div>
     
     <footer>
         Copyright &copy; 2020 Sachiko Yokoyama, All rights Reserved.
     </footer>
 
-    <!-- <script src="../js/navmenu.js"></script> -->
+    <script src="../js/navmenu.js"></script>
+    <script src="../js/navmenutoggle.js"></script>
 </body>
 </html>

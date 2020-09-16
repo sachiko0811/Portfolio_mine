@@ -1,6 +1,39 @@
+#skills-all {
+    padding: 5vh 10vw;
+    color: $basic-color;
+}
+
 #skills {
     h1 {
         text-align: center;
-        font-size: $font-size-sm-basic;
+        font-size: 18px;
+    }
+}
+
+.skills-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+        i {
+            padding: 10px;
+            font-size: 18px;
+        }
+}
+
+.skills-details {
+    padding-top: 5vh;
+}
+
+.skills-detail {
+    h3 {
+        color: #fff;
+        text-align: center;
+        background: $basic-color;
+        padding: 5px;
+        width: 60%;
+        margin: 15px auto;
+    }
+    p {
+        text-align: center;
     }
 }

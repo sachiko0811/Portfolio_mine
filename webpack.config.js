@@ -48,6 +48,15 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html'
         }),
+        // new HtmlWebpackPlugin({
+        //     template: './html/contact.html'
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: './html/skill.html'
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: './html/works.html'
+        // }),
     ],
     optimization: {
         minimizer: [new OptimizeCSSAssetsPlugin({})]
