@@ -1,0 +1,29 @@
+header {
+    .icon {
+        img {
+            width: 50px;
+            height: 75px;
+            cursor: pointer;
+            @include sm {
+                // width: 100px;
+                // height: 45px;
+                padding: 10px;
+        }
+        }
+    }
+}
+
+.header-laptop {
+    padding: 10px;
+    background: $background-basic;
+    width: 100vw;
+    @include sm {
+        display: none;
+    }
+}
+
+.header-tablet {
+    @include xl {
+        display: none;
+    }
+}

@@ -1,8 +1,35 @@
 #contact {
+    color: $basic-color;
     h1 {
         text-align: center;
-        font-size: 18px;
         font-weight: bold;
-        // color: red;
+        padding: 10px;
+
+        @include sm {
+            font-size: 18px;
+        }
     }
+}
+
+.contact-form_group {
+    font-family: $font-family-basic;
+    @include sm {
+        padding: 10px 50px;
+    }
+        input {
+            border: 1px solid $basic-color;
+            border-radius: 5px;
+            padding: 5px;
+        }
+}
+
+.contact-label {
+    padding-bottom: 5px;
+}
+
+.contact-form_message {
+    border: 1px solid $basic-color;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: $font-family-basic;
 }

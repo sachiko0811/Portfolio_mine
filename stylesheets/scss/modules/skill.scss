@@ -1,12 +1,16 @@
 #skills-all {
-    padding: 5vh 10vw;
+    padding: 100px 10vw 5vh;
     color: $basic-color;
 }
 
 #skills {
     h1 {
         text-align: center;
-        font-size: 18px;
+        @include sm {
+            font-size: 18px;
+            padding: 5vh 0;
+        }
+        
     }
 }
 
@@ -15,13 +19,19 @@
     flex-wrap: wrap;
     justify-content: center;
         i {
-            padding: 10px;
-            font-size: 18px;
+            @include sm {
+                padding: 10px;
+                font-size: 18px;
+            }
+            
         }
 }
 
 .skills-details {
-    padding-top: 5vh;
+    @include sm {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
 }
 
 .skills-detail {

@@ -7,6 +7,12 @@ body {
     // background: $background-basic;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    // background: $background-basic;
+}
+
 nav {
     li {
         list-style: none;
@@ -25,29 +31,29 @@ footer {
 
 // Small devices
 @mixin sm {
-    @media (max-width: $screen-sm-min) {
-        @content
+    @media (max-width: $breakpoint-sm) {
+        @content;
     }
 }
 
 // Medium devices
 @mixin md {
-    @media (max-width: $screen-md-min) {
-        @content
+    @media (max-width: $breakpoint-md) {
+        @content;
     }
 }
 
 // Large devices
 @mixin lg {
-    @media (max-width: $screen-lg-min) {
-        @content
+    @media (max-width: $breakpoint-lg) {
+        @content;
     }
 }
 
 
 // Extra large deveces
 @mixin xl {
-    @media ( min-width: $screen-xl-min) {
-        @content
+    @media ( min-width: $breakpoint-xl) {
+        @content;
     }
 }

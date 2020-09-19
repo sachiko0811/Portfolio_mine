@@ -1,27 +1,61 @@
-
+#about {
+    @include sm {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+}
 
 .about-title {
-    font-size: 18px;
+    color: $basic-color;
+    padding: 10px 5vw;
+    font-size: 24px;
     font-weight: bold;
         p {
-            font-size: 16px;
+            @include sm {
+                font-size: 16px;
+            }
         }
+}
+
+.about-title-p {
+    color: $basic-color;
+    padding: 10px 5vw;
+    font-size: 18px;
 }
 
 .about-links {
     color: $basic-color;
-    font-size: 1.5rem;
-    padding: 15px;
-        a &:visited {
+    padding: 10px 5vw;
+    font-size: 24px;
+ 
+    @include sm {
+        font-size: 1.5rem;
+        padding: 20px;
+        text-align-last: justify;
+    }
+        i {
+            padding: 10px;
             color: $basic-color;
-        }
-            i {
-                padding: 10px;
+
+            &:hover {
+                color: $second-green;
+                transform: scale(1.3);
+                transition: .7s;
             }
+
+            &:visited {
+                color: red; //　謎
+            }
+        }
 }
 
 .about-btns {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    @include xl {
+        padding: 10px 5vw;
+    }
+    @include sm {
+        justify-content: center;
+    }
 }

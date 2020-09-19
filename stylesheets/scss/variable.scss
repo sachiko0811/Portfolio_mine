@@ -1,6 +1,13 @@
 // Colors:
-$basic-color: #595656;
+$basic-color: #666B68;
 $background-basic: #fafafa;
+$basic-green: #4B735D;
+$second-green: #9CDBB9;
+$basic-red: #590C00;
+
+// Font
+$font-family-basic: 'Lato', sans-serif;
+
 
 // Font-size:
 $font-size-sm-basic: 16px;
@@ -8,16 +15,16 @@ $font-size-sm-big: 18px;
 
 // Break Points:
 
-$screen-sm-min: 375px;
+$breakpoint-sm: 375px;
 
 // Small tablets
 
-$screen-md-min: 768px;
+$breakpoint-md: 768px;
 
 // Tablets and small desktops
 
-$screen-lg-min: 1200px;
+$breakpoint-lg: 1024px;
 
 // Large tablets and desktops
 
-$screen-xl-min: 1440px;
+$breakpoint-xl: 1440px;

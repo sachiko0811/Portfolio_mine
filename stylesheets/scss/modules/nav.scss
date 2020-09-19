@@ -1,3 +1,45 @@
+.nav-laptop {
+    // height: 100px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background: $background-basic;
+    justify-content: space-around;
+    
+
+    @include lg {
+        display: block;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    @include md {
+        display: none;
+    }
+
+    @include sm {
+        display: none;
+    }
+    a {
+        padding: 10px;
+        color: $basic-color;
+        cursor: pointer;
+    }
+}
+
+.nav-second {
+    display: none;
+    @include sm {
+        // padding-top: 50px;
+        // padding-left: 230px;
+        align-self: center;
+        display: block;
+        
+    }
+}
+
 .nav-second-nav {
     background: #fafafa;
     position: fixed;
@@ -67,14 +109,3 @@
     opacity: 1;
     visibility: visible;
 }
-
-.nav-laptop {
-    @include sm {
-        display: none;
-    }
-
-    @include md {
-        display: none;
-    }
-}
-
