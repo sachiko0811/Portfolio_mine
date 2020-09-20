@@ -5,14 +5,23 @@
         font-weight: bold;
         padding: 10px;
 
+        @include md {
+            font-size: 18px;
+            padding-top: 150px;
+        }
+
         @include sm {
             font-size: 18px;
+            padding-top: 120px;
         }
     }
 }
 
 .contact-form_group {
     font-family: $font-family-basic;
+    @include md {
+        padding: 10px 50px;
+    }
     @include sm {
         padding: 10px 50px;
     }

@@ -1,9 +1,18 @@
 header {
     .icon {
+        @include md {
+            padding: 10px;
+        }
+        @include sm {
+            padding: 10px;
+        }
         img {
             width: 50px;
             height: 75px;
             cursor: pointer;
+            @include md {
+                padding: 10px;
+            }
             @include sm {
                 // width: 100px;
                 // height: 45px;
@@ -17,6 +26,9 @@ header {
     padding: 10px;
     background: $background-basic;
     width: 100vw;
+    @include md {
+        display: none;
+    }
     @include sm {
         display: none;
     }
@@ -25,5 +37,15 @@ header {
 .header-tablet {
     @include xl {
         display: none;
+    }
+
+    @include md {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    @include sm {
+        justify-content: space-between;
+        width: 100%;
     }
 }

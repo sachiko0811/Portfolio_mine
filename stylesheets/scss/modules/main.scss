@@ -21,6 +21,10 @@
     padding-top: 5vh;
     img {
         height: 500px;
+        @include md {
+            height: 100%;
+            width: 100%;
+        }
         @include sm {
             height: 100%;
             width: 100%;

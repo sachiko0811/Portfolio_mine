@@ -6,6 +6,14 @@
 #skills {
     h1 {
         text-align: center;
+        @include lg {
+            font-size: 20px;
+            padding: 5vh 0;
+        }
+        @include md {
+            font-size: 20px;
+            padding: 5vh 0;
+        }
         @include sm {
             font-size: 18px;
             padding: 5vh 0;
@@ -19,6 +27,10 @@
     flex-wrap: wrap;
     justify-content: center;
         i {
+            @include md {
+                padding: 15px;
+                font-size: 20px;
+            }
             @include sm {
                 padding: 10px;
                 font-size: 18px;
@@ -28,6 +40,10 @@
 }
 
 .skills-details {
+    @include md {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
     @include sm {
         padding-top: 10vh;
         padding-bottom: 10vh;
