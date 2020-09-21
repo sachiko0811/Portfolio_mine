@@ -35,6 +35,7 @@ header {
 }
 
 .header-tablet {
+    background: #fff;
     @include xl {
         display: none;
     }
