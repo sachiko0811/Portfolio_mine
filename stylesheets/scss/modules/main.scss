@@ -1,6 +1,10 @@
 #main {
     margin-top: 100px;
 
+    @include xxl {
+        height: 100vh;
+    }
+
     @include xl {
         height: 100vh;
     }
@@ -21,6 +25,20 @@
     padding-top: 5vh;
     img {
         height: 500px;
+
+        @include xxl {
+            height: 100%;
+            width: 100%;
+        }
+
+        @include xl {
+            height: 100%;
+            width: 100%;
+        }
+        @include lg {
+            height: 100%;
+            width: 100%;
+        }
         @include md {
             height: 100%;
             width: 100%;

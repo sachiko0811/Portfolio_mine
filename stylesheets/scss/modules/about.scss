@@ -52,6 +52,7 @@
 .about-btns {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px 5vw;
     @include xl {
         padding: 10px 5vw;
     }

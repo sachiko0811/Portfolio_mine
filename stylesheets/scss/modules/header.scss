@@ -7,8 +7,9 @@ header {
             padding: 10px;
         }
         img {
-            width: 50px;
-            height: 75px;
+            width: 40px;
+            height: 60px;
+            margin-left: 30px;
             cursor: pointer;
             @include md {
                 padding: 10px;
@@ -24,8 +25,12 @@ header {
 
 .header-laptop {
     padding: 10px;
-    background: $background-basic;
+    background: #fff;
+    opacity: 0.8;
     width: 100vw;
+    @include lg {
+        display: block;
+    }
     @include md {
         display: none;
     }
@@ -36,9 +41,9 @@ header {
 
 .header-tablet {
     background: #fff;
-    @include xl {
-        display: none;
-    }
+    // @include xl {
+    //     display: none;
+    // }
 
     @include md {
         justify-content: space-between;

@@ -3,16 +3,21 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
-    background: $background-basic;
+    // background: $background-basic;
     justify-content: space-around;
-    
+
+    @include xl {
+      // display: block;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+    }
 
     @include lg {
-        display: block;
+        // display: block;
         width: 100vw;
         align-items: center;
         justify-content: center;
-        
     }
 
     @include md {
@@ -31,6 +36,11 @@
 
 .nav-second {
     display: none;
+
+    @include lg {
+      display: none;
+    }
+
     @include md {
         display: block;
         align-self: center;

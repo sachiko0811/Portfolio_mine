@@ -52,9 +52,16 @@ footer {
 }
 
 
-// Extra large deveces
+// Extra large devices
 @mixin xl {
-    @media ( min-width: $breakpoint-xl) {
+    @media ( max-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+// Max large
+@mixin xxl {
+    @media ( max-width: $breakpoint-xxl) {
         @content;
     }
 }

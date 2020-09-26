@@ -60,6 +60,16 @@
     border-radius: 45px;
     border: 1px solid $basic-color;
     margin-bottom: 20px;
+    cursor: pointer;
+    @include xxl {
+        padding: 15px 25px;
+    }
+    @include xl {
+        padding: 15px 25px;
+    }
+    @include lg {
+        padding: 10px 15px;
+    }
     @include sm {
         padding: 10px 15px;
     }    

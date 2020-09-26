@@ -5,7 +5,16 @@
 
 #skills {
     h1 {
+        font-weight: bold;
         text-align: center;
+        @include xxl {
+            font-size: 24px;
+            padding: 5vh 0;
+        }
+        @include xl {
+            font-size: 24px;
+            padding: 5vh 0;
+        }
         @include lg {
             font-size: 20px;
             padding: 5vh 0;
@@ -27,6 +36,14 @@
     flex-wrap: wrap;
     justify-content: center;
         i {
+            @include xxl {
+                padding: 20px;
+                font-size: 24px;
+            }
+            @include xl {
+                padding: 20px;
+                font-size: 24px;
+            }
             @include md {
                 padding: 15px;
                 font-size: 20px;
@@ -40,6 +57,15 @@
 }
 
 .skills-details {
+    @include xxl {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+    @include xl {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
     @include md {
         padding-top: 10vh;
         padding-bottom: 10vh;
@@ -55,9 +81,23 @@
         color: #fff;
         text-align: center;
         background: $basic-color;
-        padding: 5px;
-        width: 60%;
-        margin: 15px auto;
+
+        @include xxl {
+            padding: 10px;
+            width: 30%;
+            margin: 30px auto;
+        }
+        @include xl {
+            padding: 10px;
+            width: 30%;
+            margin: 25px auto;
+        }
+        @include sm {
+            padding: 5px;
+            width: 60%;
+            margin: 15px auto;
+        }
+
     }
     p {
         text-align: center;
