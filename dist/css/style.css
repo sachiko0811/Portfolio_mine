@@ -9,7 +9,9 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: hero-new,sans-serif;
+  font-weight: 100;
+  font-style: normal; }
 
 header {
   position: fixed;
@@ -27,38 +29,35 @@ footer {
 
 .btn-resume button {
   font-weight: 200;
-  background: #fafafa;
   padding: 10px 15px;
-  border-radius: 45px;
+  border-radius: 5px;
   border: 1px solid #666B68;
-  margin-right: 25px;
-  color: #666B68; }
+  margin-right: 25px; }
   .btn-resume button a {
     text-decoration: none;
-    color: #666B68; }
+    color: #fff; }
   .btn-resume button:hover {
-    background: #666B68;
+    background: #fff;
     transition: .7s;
     cursor: pointer; }
     .btn-resume button:hover a {
-      color: #fafafa; }
+      color: #666B68; }
 
 .btn-send-msg button {
   font-weight: 200;
-  background: #fafafa;
   padding: 10px 15px;
-  border-radius: 45px;
-  border: 1px solid #666B68;
-  color: #666B68; }
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  color: #eaeaea; }
   .btn-send-msg button a {
     text-decoration: none;
-    color: #666B68; }
+    color: #eaeaea; }
   .btn-send-msg button:hover {
-    background: #666B68;
     transition: .7s;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #666B68; }
     .btn-send-msg button:hover a {
-      color: #fafafa; }
+      color: #666B68; }
 
 .btn-contactus {
   text-align: center;

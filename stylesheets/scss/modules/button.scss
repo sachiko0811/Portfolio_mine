@@ -1,23 +1,23 @@
 .btn-resume {
     button {
         font-weight: 200;
-        background: $background-basic;
+        // background: $basic-color;
         padding: 10px 15px;
-        border-radius: 45px;
+        border-radius: 5px;
         border: 1px solid $basic-color;
         margin-right: 25px;
-        color: $basic-color;
+        // color: #fff;
             a {
                 text-decoration: none;
-                color: $basic-color;
+                color: #fff;
             }
             &:hover {
-                background: $basic-color;
-                // color: $background-basic;
+                background: #fff;
+                // color: $basic-color;
                 transition: .7s;
                 cursor: pointer;
                 a {
-                    color: $background-basic;
+                    color: $basic-color;
                 }
             }
     }
@@ -26,22 +26,23 @@
 .btn-send-msg {
     button {
         font-weight: 200;
-        background: $background-basic;
+        // background: $background-basic;
         padding: 10px 15px;
-        border-radius: 45px;
-        border: 1px solid $basic-color;
-        color: $basic-color;
+        border-radius: 5px;
+        border: 1px solid #eaeaea;
+        color: #eaeaea;
             a {
                 text-decoration: none;
-                color: $basic-color;
+                color: #eaeaea;
             }
             &:hover {
-                background: $basic-color;
+                // background: $basic-color;
                 // color: $background-basic;
                 transition: .7s;
                 cursor: pointer;
+                color: $basic-color;
                 a {
-                    color: $background-basic;
+                    color: $basic-color;
                 }
             }
     }
