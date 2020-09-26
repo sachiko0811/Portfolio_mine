@@ -103,7 +103,7 @@ header .icon img {
       padding: 10px; } }
   @media (max-width: 375px) {
     header .icon img {
-      padding: 10px; } }
+      margin-left: 10px; } }
 
 .header-laptop {
   padding: 10px;
@@ -237,9 +237,13 @@ footer {
       margin: 35px; } }
   @media (max-width: 375px) {
     .nav-second {
-      align-self: center;
-      display: block;
-      margin: 25px; } }
+      margin: 0 auto;
+      width: 100%;
+      position: fixed;
+      text-align: center;
+      bottom: 20px;
+      padding: 5px;
+      z-index: 1001; } }
 
 .nav-second-nav {
   position: fixed;
@@ -255,6 +259,9 @@ footer {
 .nav-menu-ul {
   text-align: left;
   justify-content: center; }
+  @media (max-width: 375px) {
+    .nav-menu-ul {
+      text-align: center; } }
   .nav-menu-ul li {
     padding: 10px; }
     .nav-menu-ul li a {
@@ -309,6 +316,9 @@ footer {
   width: 34px;
   height: 24px;
   cursor: pointer; }
+  @media (max-width: 375px) {
+    .btn-trigger {
+      z-index: 1001; } }
 
 .btn-trigger span {
   position: absolute;
@@ -347,6 +357,11 @@ footer {
   border-radius: 50%;
   border: 4px solid rgba(102, 107, 104, 0);
   transition: all .75s; }
+  @media (max-width: 375px) {
+    #btn17::after {
+      width: 50px;
+      height: 50px;
+      margin: -30px 0 0 -30px; } }
 
 #btn17.active span:nth-of-type(1) {
   -webkit-transform: translateY(10px) rotate(45deg);
@@ -616,6 +631,14 @@ footer {
 .popup-inner img {
   width: 300px;
   height: 200px; }
+  @media (max-width: 375px) {
+    .popup-inner img {
+      width: 150px;
+      height: 100px; } }
+
+@media (max-width: 375px) {
+  .popup-inner-section {
+    flex-direction: column; } }
 
 .works-work_desc {
   padding: 10px; }
