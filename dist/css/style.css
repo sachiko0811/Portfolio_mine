@@ -237,13 +237,11 @@ footer {
       text-align: end; } }
   @media (max-width: 375px) {
     .nav-second {
-      display: block;
-      width: 50px;
-      height: 50px;
-      margin: 0;
+      margin: 0 auto;
+      width: 100%;
       position: fixed;
-      bottom: 20px;
-      left: calc((100% - 50px)/2);
+      text-align: center;
+      bottom: 10px;
       padding: 5px;
       z-index: 1001; } }
 
@@ -389,6 +387,15 @@ footer {
 
 #btn17.active::after {
   border: 4px solid #666B68; }
+
+.test {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: chartreuse; }
 
 @media (max-width: 375px) {
   #about {
