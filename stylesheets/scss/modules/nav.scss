@@ -43,8 +43,9 @@
 
     @include md {
         display: block;
-        align-self: center;
+        // align-self: center;
         margin: 35px;
+        text-align: end;
     }
     @include sm {
         // padding-top: 50px;
@@ -54,13 +55,25 @@
         // display: block;
         // margin: 25px;
 
-        margin: 0 auto;
-        width: 100%;
+        // margin: 0 auto;
+        // width: 100%;
+        // position: fixed;
+        // text-align: center;
+        // // bottom: 20px;
+        // bottom: 10px;
+        // padding: 5px;
+        // z-index: 1001;
+
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0;
         position: fixed;
-        text-align: center;
         bottom: 20px;
+        left: calc((100% - 50px)/2);
         padding: 5px;
         z-index: 1001;
+
     }
 }
 
