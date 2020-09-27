@@ -1,7 +1,7 @@
 .btn-resume {
     button {
         font-weight: 200;
-        // background: $basic-color;
+        background: $basic-color;
         padding: 10px 15px;
         border-radius: 5px;
         border: 1px solid $basic-color;
@@ -26,23 +26,25 @@
 .btn-send-msg {
     button {
         font-weight: 200;
-        // background: $background-basic;
+        background: #fff;
         padding: 10px 15px;
         border-radius: 5px;
-        border: 1px solid #eaeaea;
-        color: #eaeaea;
+        border: 1px solid #ccc;
+        margin-right: 25px;
+        color: $basic-color;
             a {
                 text-decoration: none;
-                color: #eaeaea;
+                color: #999;
             }
             &:hover {
-                // background: $basic-color;
-                // color: $background-basic;
+                background: #fff;
+                // color: $basic-color;
                 transition: .7s;
                 cursor: pointer;
-                color: $basic-color;
+                border: 1px solid $basic-color;
                 a {
                     color: $basic-color;
+                    transition: .7s;
                 }
             }
     }

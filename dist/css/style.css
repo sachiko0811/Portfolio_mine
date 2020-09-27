@@ -29,6 +29,7 @@ footer {
 
 .btn-resume button {
   font-weight: 200;
+  background: #666B68;
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid #666B68;
@@ -45,19 +46,23 @@ footer {
 
 .btn-send-msg button {
   font-weight: 200;
+  background: #fff;
   padding: 10px 15px;
   border-radius: 5px;
-  border: 1px solid #eaeaea;
-  color: #eaeaea; }
+  border: 1px solid #ccc;
+  margin-right: 25px;
+  color: #666B68; }
   .btn-send-msg button a {
     text-decoration: none;
-    color: #eaeaea; }
+    color: #999; }
   .btn-send-msg button:hover {
+    background: #fff;
     transition: .7s;
     cursor: pointer;
-    color: #666B68; }
+    border: 1px solid #666B68; }
     .btn-send-msg button:hover a {
-      color: #666B68; }
+      color: #666B68;
+      transition: .7s; }
 
 .btn-contactus {
   text-align: center;
@@ -224,6 +229,11 @@ footer {
     padding: 10px;
     color: #666B68;
     cursor: pointer; }
+
+.nav-laptop-logo {
+  padding-top: 15px;
+  width: 200px;
+  height: 80px; }
 
 .nav-second {
   display: none; }
@@ -460,7 +470,8 @@ footer {
 
 #skills-all {
   padding: 100px 10vw 5vh;
-  color: #666B68; }
+  color: #666B68;
+  font-family: hero-new, sans-serif; }
 
 #skills h1 {
   font-weight: bold;
@@ -578,7 +589,7 @@ footer {
         padding-top: 120px; } }
 
 .contact-form_group {
-  font-family: "Lato", sans-serif; }
+  font-family: hero-new, sans-serif; }
   @media (max-width: 2000px) {
     .contact-form_group {
       padding: 20px 50px;
@@ -600,7 +611,7 @@ footer {
     border: 1px solid #666B68;
     border-radius: 5px;
     padding: 5px;
-    font-family: "Lato", sans-serif; }
+    font-family: hero-new, sans-serif; }
 
 .contact-label {
   padding-bottom: 5px; }
@@ -609,7 +620,7 @@ footer {
   border: 1px solid #666B68;
   border-radius: 5px;
   padding: 5px;
-  font-family: "Lato", sans-serif; }
+  font-family: hero-new, sans-serif; }
 
 #works-all {
   padding: 120px 10vw; }
@@ -645,9 +656,17 @@ footer {
   justify-content: center; }
 
 .works-work_img {
-  margin: 20px; }
+  margin: 20px;
+  justify-content: center; }
   .works-work_img:hover {
     cursor: pointer; }
+  .works-work_img img {
+    width: 24px;
+    height: 24px;
+    color: #666B68; }
+  .works-work_img h2 {
+    font-size: 24px;
+    color: #666B68; }
 
 .popup-inner img {
   width: 300px;
