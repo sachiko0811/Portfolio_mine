@@ -58,5 +58,7 @@
     }
     @include sm {
         justify-content: center;
+        // flex-direction: column;
+        flex-wrap: nowrap;
     }
 }

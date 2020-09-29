@@ -10,16 +10,17 @@ body {
     // background: $background-basic;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    // background: $background-basic;
-}
+// header {
+//     position: fixed;
+//     width: 100%;
+//     // background: $background-basic;
+// }
 
 nav {
     // background: #fff;
     li {
         list-style: none;
+        display: inline-block;
         a{
             color: black;
             text-decoration: none;

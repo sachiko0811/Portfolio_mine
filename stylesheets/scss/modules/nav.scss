@@ -1,43 +1,95 @@
 .nav-laptop {
-    // height: 100px;
+    // // height: 100px;
+    // width: 100vw;
+    // align-items: center;
+    // justify-content: center;
+    // // background: $background-basic;
+    // justify-content: space-around;
+
+    // @include xl {
+    //   // display: block;
+    //   width: 100vw;
+    //   align-items: center;
+    //   justify-content: center;
+    // }
+
+    // @include lg {
+    //     // display: block;
+    //     width: 100vw;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
+
+    // @include md {
+    //     display: none;
+    // }
+
+    // @include sm {
+    //     display: none;
+    // }
+    // a {
+    //     padding: 10px;
+    //     color: $basic-color;
+    //     cursor: pointer;
+    // }
+}
+
+#nav-laptop-header {
+  // height: 100px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  // background: $background-basic;
+  justify-content: space-around;
+  // background: red;
+
+  @include xl {
+    // display: block;
     width: 100vw;
     align-items: center;
     justify-content: center;
-    // background: $background-basic;
-    justify-content: space-around;
+  }
 
-    @include xl {
+  @include lg {
       // display: block;
       width: 100vw;
       align-items: center;
       justify-content: center;
-    }
+  }
 
-    @include lg {
-        // display: block;
-        width: 100vw;
-        align-items: center;
-        justify-content: center;
-    }
+  @include md {
+      display: none;
+  }
 
-    @include md {
-        display: none;
-    }
-
-    @include sm {
-        display: none;
-    }
-    a {
-        padding: 10px;
-        color: $basic-color;
-        cursor: pointer;
-    }
+  @include sm {
+      display: none;
+  }
+  a {
+      padding: 10px;
+      color: $basic-color;
+      cursor: pointer;
+  }
 }
 
-.nav-laptop-logo {
+// .nav-laptop-logo {
+//   padding-top: 15px;
+//   width: 200px;
+//   height: 80px;
+// }
+
+#nav-laptop-logo {
+  display: inline-block;
   padding-top: 15px;
   width: 200px;
   height: 80px;
+  transition: all 0.3s;
+}
+
+.is-scrolled-logo {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  // background:red;
 }
 
 .nav-second {
@@ -107,6 +159,9 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s, visibility .5s;
+    @include md {
+      top: 80px;
+    }
 }
 
 .nav-menu-ul {

@@ -13,12 +13,9 @@ body {
   font-weight: 100;
   font-style: normal; }
 
-header {
-  position: fixed;
-  width: 100%; }
-
 nav li {
-  list-style: none; }
+  list-style: none;
+  display: inline-block; }
   nav li a {
     color: black;
     text-decoration: none; }
@@ -110,21 +107,6 @@ header .icon img {
     header .icon img {
       margin-left: 10px; } }
 
-.header-laptop {
-  padding: 10px;
-  background: #fff;
-  opacity: 0.8;
-  width: 100vw; }
-  @media (max-width: 1024px) {
-    .header-laptop {
-      display: block; } }
-  @media (max-width: 768px) {
-    .header-laptop {
-      display: none; } }
-  @media (max-width: 375px) {
-    .header-laptop {
-      display: none; } }
-
 .header-tablet {
   background: #fff; }
   @media (max-width: 768px) {
@@ -135,6 +117,22 @@ header .icon img {
     .header-tablet {
       justify-content: space-between;
       width: 100%; } }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  transition: .3s; }
+
+.is-scrolled {
+  height: 75px;
+  font-size: 14px;
+  background: #fff;
+  opacity: 0.8; }
 
 footer {
   color: #666B68;
@@ -204,36 +202,43 @@ footer {
     #home {
       padding: 5vh 10vw; } }
 
-.nav-laptop {
+#nav-laptop-header {
   width: 100vw;
   align-items: center;
   justify-content: center;
   justify-content: space-around; }
   @media (max-width: 1440px) {
-    .nav-laptop {
+    #nav-laptop-header {
       width: 100vw;
       align-items: center;
       justify-content: center; } }
   @media (max-width: 1024px) {
-    .nav-laptop {
+    #nav-laptop-header {
       width: 100vw;
       align-items: center;
       justify-content: center; } }
   @media (max-width: 768px) {
-    .nav-laptop {
+    #nav-laptop-header {
       display: none; } }
   @media (max-width: 375px) {
-    .nav-laptop {
+    #nav-laptop-header {
       display: none; } }
-  .nav-laptop a {
+  #nav-laptop-header a {
     padding: 10px;
     color: #666B68;
     cursor: pointer; }
 
-.nav-laptop-logo {
+#nav-laptop-logo {
+  display: inline-block;
   padding-top: 15px;
   width: 200px;
-  height: 80px; }
+  height: 80px;
+  transition: all 0.3s; }
+
+.is-scrolled-logo {
+  display: inline-block;
+  width: 100px;
+  height: 40px; }
 
 .nav-second {
   display: none; }
@@ -275,6 +280,9 @@ footer {
   opacity: 0;
   visibility: hidden;
   transition: opacity .5s, visibility .5s; }
+  @media (max-width: 768px) {
+    .nav-second-nav {
+      top: 80px; } }
 
 .nav-menu-ul {
   text-align: left;
@@ -466,7 +474,8 @@ footer {
       padding: 10px 5vw; } }
   @media (max-width: 375px) {
     .about-btns {
-      justify-content: center; } }
+      justify-content: center;
+      flex-wrap: nowrap; } }
 
 #skills-all {
   padding: 100px 10vw 5vh;
