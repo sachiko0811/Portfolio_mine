@@ -131,6 +131,18 @@ header {
   font-size: 14px;
   background: #fff;
   opacity: 0.8; }
+  @media (max-width: 2000px) {
+    .is-scrolled {
+      height: 85px; } }
+  @media (max-width: 1440px) {
+    .is-scrolled {
+      height: 85px; } }
+  @media (max-width: 1024px) {
+    .is-scrolled {
+      height: 80px; } }
+  @media (max-width: 768px) {
+    .is-scrolled {
+      height: 80px; } }
 
 footer {
   color: #666B68;
@@ -200,6 +212,14 @@ footer {
     #home {
       padding: 5vh 10vw; } }
 
+@media (max-width: 1440px) {
+  .nav-laptop {
+    justify-content: space-evenly; } }
+
+@media (max-width: 1024px) {
+  .nav-laptop {
+    justify-content: space-evenly; } }
+
 #nav-laptop-header {
   width: 100vw;
   align-items: center;
@@ -227,16 +247,32 @@ footer {
     cursor: pointer; }
 
 #nav-laptop-logo {
-  display: inline-block;
   padding-top: 15px;
   width: 200px;
   height: 80px;
   transition: all 0.3s; }
+  @media (max-width: 2000px) {
+    #nav-laptop-logo {
+      width: 64px;
+      height: 64px; } }
+  @media (max-width: 1440px) {
+    #nav-laptop-logo {
+      width: 64px;
+      height: 64px; } }
+  @media (max-width: 1024px) {
+    #nav-laptop-logo {
+      width: 64px;
+      height: 64px; } }
 
-.is-scrolled-logo {
-  display: inline-block;
-  width: 100px;
-  height: 40px; }
+@media (max-width: 2000px) {
+  .is-scrolled-logo {
+    width: 48px;
+    height: 48px; } }
+
+@media (max-width: 1440px) {
+  .is-scrolled-logo {
+    width: 48px;
+    height: 48px; } }
 
 .nav-second {
   display: none; }
@@ -285,9 +321,18 @@ footer {
 .nav-menu-ul {
   text-align: left;
   justify-content: center; }
+  @media (max-width: 768px) {
+    .nav-menu-ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 100%; } }
   @media (max-width: 375px) {
     .nav-menu-ul {
-      text-align: center; } }
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 100%; } }
   .nav-menu-ul li {
     padding: 10px; }
     .nav-menu-ul li a {
@@ -425,9 +470,13 @@ footer {
   left: 50%;
   transform: translateX(-50%); }
 
+@media (max-width: 768px) {
+  #about {
+    padding-top: 85px; } }
+
 @media (max-width: 375px) {
   #about {
-    padding-top: 5vh;
+    padding-top: 100px;
     padding-bottom: 5vh; } }
 
 .about-title {

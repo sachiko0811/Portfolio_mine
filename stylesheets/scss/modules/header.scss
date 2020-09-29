@@ -100,6 +100,22 @@ header {
     font-size: 14px;
     background: #fff;
     opacity: 0.8;
+
+    @include xxl {
+        height: 85px;
+    }
+
+    @include xl {
+        height: 85px;
+    }
+
+    @include lg {
+        height: 80px;
+    }
+
+    @include md {
+        height: 80px;
+    }
   }
 //   .is-animation h1 {
 //     color: #000;
