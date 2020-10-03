@@ -48,6 +48,41 @@
                 }
             }
     }
+    @include sm {
+        display: none;
+    }
+}
+
+.btn-send-msg_mobile {
+    display: none;
+
+    @include sm {
+        display: block;
+        button {
+            padding: 10px 15px;
+            font-weight: 200;
+            background: #fff;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 25px;
+            color: $basic-color;
+            i {
+                text-decoration: none;
+                color: #999;
+            }
+            &:hover {
+                background: #fff;
+                // color: $basic-color;
+                transition: .7s;
+                cursor: pointer;
+                border: 1px solid $basic-color;
+                i {
+                    color: $basic-color;
+                    transition: .7s;
+                }
+            }
+        }
+    }
 }
 
 .btn-contactus {

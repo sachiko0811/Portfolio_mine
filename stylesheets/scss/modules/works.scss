@@ -40,6 +40,9 @@
 .works-work_img {
   margin: 20px;
   justify-content: center;
+  // background-image: url(/img/cricket_icon.png);
+  // background-size: cover;
+  
     &:hover {
       cursor: pointer;
     }
@@ -51,6 +54,10 @@
     h2 {
       font-size: 24px;
       color: $basic-color;
+      background-image: url(/img/cricket_icon.png);
+      // height: 24px;
+      width: 24px;
+      // background-size: cover;
     }
 }
 

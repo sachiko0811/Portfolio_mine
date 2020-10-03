@@ -16,27 +16,31 @@
         height: 100vh;
     }
     @include sm {
-        height: 250px;
+        height: 100vh
     }
+}
+
+.main-desc-img {
+    justify-content: center;
+    align-content: center;
 }
 
 .main-img {
     text-align: center;
     padding-top: 5vh;
     img {
-        height: 500px;
 
         @include xxl {
-            height: 100%;
-            width: 100%;
+            height: 350px;
+            // width: ;
         }
 
         @include xl {
-            height: 100%;
+            height: 55%;
             width: 100%;
         }
         @include lg {
-            height: 100%;
+            height: 50%;
             width: 100%;
         }
         @include md {
@@ -62,3 +66,94 @@
         // color: $basic-color;
     }
 }
+
+.main-desc-second {
+    padding-right: 5vw;
+    font-size: 24px;
+    line-height: 1.7;
+    color: $basic-color;
+    padding-left: 50%;
+    @include sm {
+        // line-height: 1.5;
+        margin-top: 50px;
+        // padding-bottom: 50px;
+        font-weight: bold;
+        // width: 200px;
+        font-size: 24px;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@keyframes main-slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(150px);
+      }
+      
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .main-slideInRight {
+      animation-name: main-slideInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    
+    #keyvisual {
+      overflow: hidden
+    }
+
+@keyframes main-slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+        }
+        
+        to {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    
+    .main-slideInLeft {
+        animation-name: main-slideInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+    #keyvisual {
+        overflow: hidden
+    }
+    
+    // ityped
+
+    .ityped-cursor {
+        font-size: 1em;
+        opacity: 1;
+        -webkit-animation: blink 0.3s infinite;
+        -moz-animation: blink 0.3s infinite;
+        animation: blink 0.3s infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
