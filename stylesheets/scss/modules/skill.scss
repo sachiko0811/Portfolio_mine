@@ -1,9 +1,13 @@
 #skills-all {
-    padding: 5vh 10vw 5vh;
+    height: 100vh;
+    // padding: 5vh 10vw 5vh;
     color: $basic-color;
     font-family: $font-family-basic;
+    @include md {
+        // padding-top: 85px;
+    }
     @include sm {
-        margin-top: 150px;
+        // padding-top: 85px;
     }
 }
 
@@ -11,19 +15,21 @@
     h1 {
         font-weight: bold;
         text-align: center;
+        padding: 0 5vw;
         @include xxl {
             font-size: 24px;
-            padding: 5vh 0;
+            // padding: 5vh 0;
         }
         @include xl {
             font-size: 24px;
-            padding: 5vh 0;
+            // padding: 5vh 0;
         }
         @include lg {
             font-size: 20px;
-            padding: 5vh 0;
+            // padding: 5vh 0;
         }
         @include md {
+            margin-top: 285px;
             font-size: 20px;
             padding: 5vh 0;
         }

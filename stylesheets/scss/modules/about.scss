@@ -1,11 +1,13 @@
 #about {
+    height: 100vh;
     @include md {
         padding-top: 85px;
+        // margin-top: 200px;
     }
     @include sm {
-        padding-top: 100px;
+        padding-top: 85px;
         // padding-top: 5vh;
-        padding-bottom: 5vh;
+        // padding-bottom: 5vh;
     }
 }
 
@@ -14,8 +16,12 @@
     padding: 10px 5vw;
     font-size: 24px;
     font-weight: bold;
+    @include md {
+        margin-top: 50px;
+    }
         p {
             @include sm {
+                margin-top: 25px;
                 font-size: 16px;
             }
         }

@@ -230,6 +230,10 @@ footer {
   font-size: 24px;
   line-height: 1.7;
   color: #666B68; }
+  @media (max-width: 768px) {
+    .main-desc-p {
+      line-height: 1.5;
+      font-weight: bold; } }
   @media (max-width: 375px) {
     .main-desc-p {
       line-height: 1.5;
@@ -241,6 +245,13 @@ footer {
   line-height: 1.7;
   color: #666B68;
   padding-left: 50%; }
+  @media (max-width: 768px) {
+    .main-desc-second {
+      margin-top: 50px;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      padding: 0; } }
   @media (max-width: 375px) {
     .main-desc-second {
       margin-top: 50px;
@@ -565,22 +576,26 @@ footer {
   left: 50%;
   transform: translateX(-50%); }
 
-@media (max-width: 768px) {
-  #about {
-    padding-top: 85px; } }
-
-@media (max-width: 375px) {
-  #about {
-    padding-top: 100px;
-    padding-bottom: 5vh; } }
+#about {
+  height: 100vh; }
+  @media (max-width: 768px) {
+    #about {
+      padding-top: 85px; } }
+  @media (max-width: 375px) {
+    #about {
+      padding-top: 85px; } }
 
 .about-title {
   color: #666B68;
   padding: 10px 5vw;
   font-size: 24px;
   font-weight: bold; }
+  @media (max-width: 768px) {
+    .about-title {
+      margin-top: 50px; } }
   @media (max-width: 375px) {
     .about-title p {
+      margin-top: 25px;
       font-size: 16px; } }
 
 .about-title-p {
@@ -620,30 +635,26 @@ footer {
       flex-wrap: nowrap; } }
 
 #skills-all {
-  padding: 5vh 10vw 5vh;
+  height: 100vh;
   color: #666B68;
   font-family: "Lato", sans-serif; }
-  @media (max-width: 375px) {
-    #skills-all {
-      margin-top: 150px; } }
 
 #skills h1 {
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  padding: 0 5vw; }
   @media (max-width: 2000px) {
     #skills h1 {
-      font-size: 24px;
-      padding: 5vh 0; } }
+      font-size: 24px; } }
   @media (max-width: 1440px) {
     #skills h1 {
-      font-size: 24px;
-      padding: 5vh 0; } }
+      font-size: 24px; } }
   @media (max-width: 1024px) {
     #skills h1 {
-      font-size: 20px;
-      padding: 5vh 0; } }
+      font-size: 20px; } }
   @media (max-width: 768px) {
     #skills h1 {
+      margin-top: 285px;
       font-size: 20px;
       padding: 5vh 0; } }
   @media (max-width: 375px) {
@@ -777,7 +788,8 @@ footer {
   font-family: "Lato", sans-serif; }
 
 #works-all {
-  padding: 120px 10vw; }
+  padding: 120px 10vw;
+  height: 100vh; }
 
 #works h1 {
   text-align: center;
@@ -811,7 +823,10 @@ footer {
 
 .works-work_img {
   margin: 20px;
-  justify-content: center; }
+  justify-content: center;
+  border: 1px solid #666B68;
+  padding: 100px;
+  border-radius: 5px; }
   .works-work_img:hover {
     cursor: pointer; }
   .works-work_img img {
@@ -820,9 +835,7 @@ footer {
     color: #666B68; }
   .works-work_img h2 {
     font-size: 24px;
-    color: #666B68;
-    background-image: url(/img/cricket_icon.png);
-    width: 24px; }
+    color: #666B68; }
 
 .popup-inner img {
   width: 300px;
@@ -891,6 +904,54 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
   cursor: pointer; }
+
+.btns {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #666B68;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s; }
+
+.btns::before, .btns::after {
+  position: absolute;
+  background: pink;
+  z-index: -1;
+  transition: 1s;
+  content: ''; }
+
+.btns::before {
+  height: 100%;
+  width: 80%; }
+
+.btns::after {
+  width: 80%;
+  height: 100%; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.btns:hover::before {
+  width: 0px;
+  background: yellow; }
+
+.btns:hover::after {
+  height: 0px;
+  background: blue; }
+
+.btns:hover {
+  background: red; }
 
 .glide {
   position: relative;

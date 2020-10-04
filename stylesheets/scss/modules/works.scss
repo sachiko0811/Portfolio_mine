@@ -1,5 +1,6 @@
 #works-all {
     padding: 120px 10vw;
+    height: 100vh;
 }
 
 #works {
@@ -40,6 +41,9 @@
 .works-work_img {
   margin: 20px;
   justify-content: center;
+  border: 1px solid $basic-color;
+  padding: 100px;
+  border-radius: 5px;
   // background-image: url(/img/cricket_icon.png);
   // background-size: cover;
   
@@ -54,9 +58,9 @@
     h2 {
       font-size: 24px;
       color: $basic-color;
-      background-image: url(/img/cricket_icon.png);
+      // background-image: url(/img/cricket_icon.png);
       // height: 24px;
-      width: 24px;
+      // width: 24px;
       // background-size: cover;
     }
 }
@@ -158,6 +162,61 @@
     cursor: pointer;
   }
 
+// btns
 
+.btns {
+  width: 300px;
+  height: 100px;
+  border: 1px solid $basic-color;
+  // font-family: 'Cinzel', serif;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+}
 
-  
+.btns::before, .btns::after {
+  position: absolute;
+  background: pink;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.btns::before {
+  height: 100%;
+  width: 80%;
+}
+
+.btns::after {
+  width: 80%;
+  height: 100%;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.btns:hover::before {
+  width: 0px;
+  background: yellow;
+}
+
+.btns:hover::after {
+  height: 0px;
+  background: blue;
+}
+
+.btns:hover {
+  background: red;
+}

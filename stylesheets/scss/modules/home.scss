@@ -1,5 +1,8 @@
 #home {
   padding: 5vh 10vw;
+  @include md {
+    // margin-top: 100px;
+  }
   @include sm {
     padding: 5vh 10vw;
   }
