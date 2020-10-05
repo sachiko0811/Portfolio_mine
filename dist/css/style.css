@@ -23,7 +23,8 @@ nav li {
 
 footer {
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #fafafa; }
 
 .btn-resume button {
   font-weight: 200;
@@ -201,7 +202,7 @@ footer {
 
 .main-img {
   text-align: center;
-  padding-top: 5vh; }
+  padding-top: 15px; }
   @media (max-width: 2000px) {
     .main-img img {
       height: 500px; } }
@@ -241,7 +242,7 @@ footer {
   font-size: 24px;
   line-height: 1.7;
   color: #666B68;
-  padding-left: 75%; }
+  text-align: end; }
   @media (max-width: 768px) {
     .main-desc-second {
       margin-top: 50px;
@@ -310,7 +311,7 @@ footer {
     opacity: 0; } }
 
 #home {
-  padding: 5vh 10vw; }
+  padding: 5vh 15vw; }
   @media (max-width: 375px) {
     #home {
       padding: 5vh 10vw; } }
@@ -582,7 +583,8 @@ footer {
   transform: translateX(-50%); }
 
 #about {
-  height: 100vh; }
+  height: 100vh;
+  background: #fafafa; }
   @media (max-width: 768px) {
     #about {
       padding-top: 85px; } }
@@ -886,9 +888,6 @@ footer {
 .works-work_desc {
   padding: 10px; }
 
-.works-image-one {
-  background-image: url(/img/cricket-icon.svg); }
-
 /*====================================
             POP UP
 ====================================*/
@@ -976,7 +975,7 @@ footer {
 
 .btns::before, .btns::after {
   position: absolute;
-  background: #fff;
+  background: #fafafa;
   z-index: -1;
   transition: 1s;
   content: ''; }
@@ -1007,14 +1006,26 @@ footer {
 
 .btns:hover::before {
   width: 0px;
-  background: #fafafa; }
+  background: #fff; }
 
 .btns:hover::after {
   height: 0px;
-  background: #fafafa; }
+  background: #fff; }
 
 .btns:hover {
-  background: #fafafa; }
+  background: #fff; }
+
+.section-about {
+  background: #fafafa;
+  padding: 5vh 10vw; }
+
+.section-works {
+  background: #fafafa;
+  width: 100vw; }
+
+.section-contact {
+  background: #fff;
+  height: 100vh; }
 
 .glide {
   position: relative;

@@ -67,10 +67,6 @@
   padding: 10px;
 }
 
-.works-image-one {
-  background-image: url(/img/cricket-icon.svg) ;
-}
-
 
 /*====================================
             POP UP
@@ -171,7 +167,7 @@
 
 .btns::before, .btns::after {
   position: absolute;
-  background: #fff;
+  background: $background-basic;
   z-index: -1;
   transition: 1s;
   content: '';
@@ -206,14 +202,14 @@
 
 .btns:hover::before {
   width: 0px;
-  background: #fafafa;
+  background: #fff;
 }
 
 .btns:hover::after {
   height: 0px;
-  background: #fafafa;
+  background: #fff;
 }
 
 .btns:hover {
-  background: #fafafa;
+  background: #fff;
 }

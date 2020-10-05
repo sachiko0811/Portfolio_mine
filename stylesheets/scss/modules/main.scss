@@ -27,7 +27,7 @@
 
 .main-img {
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 15px;
     img {
 
         @include xxl {
@@ -76,7 +76,8 @@
     font-size: 24px;
     line-height: 1.7;
     color: $basic-color;
-    padding-left: 75%;
+    text-align: end;
+    // padding-: ;
     // width: 100vw;
     @include md {
         margin-top: 50px;
