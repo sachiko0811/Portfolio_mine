@@ -38,31 +38,12 @@
     justify-content: center;
 }
 
-.works-work_img {
-  margin: 20px;
+.works-work-btns {
   justify-content: center;
-  border: 1px solid $basic-color;
-  padding: 100px;
-  border-radius: 5px;
-  // background-image: url(/img/cricket_icon.png);
-  // background-size: cover;
-  
-    &:hover {
-      cursor: pointer;
-    }
-    img {
-      width: 24px;
-      height: 24px;
-      color: $basic-color;
-    }
-    h2 {
-      font-size: 24px;
-      color: $basic-color;
-      // background-image: url(/img/cricket_icon.png);
-      // height: 24px;
-      // width: 24px;
-      // background-size: cover;
-    }
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .popup-inner {
@@ -86,26 +67,6 @@
   padding: 10px;
 }
 
-// .bwWrapper {
-//     position: relative;
-//     display: block;
-// }
-
-// .gray {
-//     -webkit-filter: grayscale(100%);
-//     -moz-filter: grayscale(100%);
-//     -ms-filter: grayscale(100%);
-//     -o-filter: grayscale(100%);
-//     filter: grayscale(100%);
-//     transition: filter 2s;
-//         &:hover {
-//             -webkit-filter: grayscale(0);
-//             -moz-filter: grayscale(0);
-//             -ms-filter: grayscale(0);
-//             -o-filter: grayscale(0);
-//             filter: grayscale(0);
-//         }
-// }
 
 /*====================================
             POP UP
@@ -162,13 +123,21 @@
     cursor: pointer;
   }
 
-// btns
+/*====================================
+            btns
+====================================*/
 
 .btns {
-  width: 300px;
-  height: 100px;
+  // width: 150px;
+  // height: 50px;
+  width: 350px;
+  height: 150px;
   border: 1px solid $basic-color;
-  // font-family: 'Cinzel', serif;
+  margin: 50px;
+  // justify-content: center;
+  // padding: 100px;
+  // border-radius: 5px;
+/*   font-family: 'Cinzel', serif; */
   font-size: 24px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -178,24 +147,48 @@
   position: relative;
   z-index: 0;
   transition: 1s;
+  box-sizing: border-box;
+  @include sm {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    flex-direction: column;
+    // margin: 5px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  h2 {
+    color: $basic-color;
+    text-align: center;
+  }
 }
 
 .btns::before, .btns::after {
   position: absolute;
-  background: pink;
+  background: #fff;
   z-index: -1;
   transition: 1s;
   content: '';
 }
 
 .btns::before {
-  height: 100%;
-  width: 80%;
+  height: 150px;
+  width: 330px;
+  @include sm {
+    height: 50px;
+    width: 130px;
+  }
 }
 
 .btns::after {
-  width: 80%;
-  height: 100%;
+  width: 350px;
+  height: 120px;
+  @include sm {
+    width: 150px;
+    height: 30px;
+  }
 }
 
 .noselect {
@@ -209,14 +202,14 @@
 
 .btns:hover::before {
   width: 0px;
-  background: yellow;
+  background: #fafafa;
 }
 
 .btns:hover::after {
   height: 0px;
-  background: blue;
+  background: #fafafa;
 }
 
 .btns:hover {
-  background: red;
+  background: #fafafa;
 }
