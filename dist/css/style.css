@@ -560,7 +560,6 @@ footer {
   transform: translateX(-50%); }
 
 #about {
-  height: 100vh;
   background: #fafafa; }
   @media (max-width: 768px) {
     #about {
@@ -568,6 +567,10 @@ footer {
   @media (max-width: 375px) {
     #about {
       padding-top: 85px; } }
+
+@media (max-width: 375px) {
+  .about-all {
+    flex-direction: column; } }
 
 .about-title {
   color: #666B68;
@@ -620,6 +623,17 @@ footer {
 
 .about-right-img img {
   width: 500px; }
+  @media (max-width: 375px) {
+    .about-right-img img {
+      display: none; } }
+
+.about-mobile-img {
+  display: none; }
+  @media (max-width: 375px) {
+    .about-mobile-img {
+      display: block; }
+      .about-mobile-img img {
+        width: 300px; } }
 
 /*==============================
            scroll
