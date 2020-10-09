@@ -12,6 +12,10 @@
     }
 }
 
+.about-all {
+    // width: 50%;
+}
+
 .about-title {
     color: $basic-color;
     padding: 10px 5vw;
@@ -71,6 +75,12 @@
         justify-content: center;
         // flex-direction: column;
         flex-wrap: nowrap;
+    }
+}
+
+.about-right-img {
+    img {
+        width: 500px;
     }
 }
 

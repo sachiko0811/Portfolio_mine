@@ -2,7 +2,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     height: 100px;
     // background: #3498db;
@@ -40,9 +40,10 @@ header {
     display: none;
 
     @include md {
-        display: block;
+        display: inline-block;
         justify-content: space-between;
         width: 100%;
+        height: 100px;
         .icon {
             width: 48px;
             height: 48px;
@@ -52,6 +53,7 @@ header {
     }
 
     @include sm {
+        display: block;
         justify-content: space-between;
         width: 100%;
         height: 85px;
@@ -119,9 +121,9 @@ header {
         height: 80px;
     }
 
-    @include md {
-        height: 80px;
-    }
+    // @include md {
+    //     height: 80px;
+    // }
   }
 //   .is-animation h1 {
 //     color: #000;
