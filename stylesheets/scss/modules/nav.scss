@@ -1,5 +1,5 @@
 .nav-laptop {
-
+  // background-color: $basic-color;
   @include xl {
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -8,15 +8,17 @@
   @include lg {
     justify-content: space-evenly;
   }
-    
 }
 
 #nav-laptop-header {
   width: 100vw;
   align-items: center;
   justify-content: center;
-  // background: $background-basic;
+  // background: $basic-color;
   justify-content: space-around;
+    a {
+      // color: #fff;
+    }
 
   @include xl {
     width: 100vw;

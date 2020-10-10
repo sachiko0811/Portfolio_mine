@@ -25,41 +25,44 @@
     align-content: center;
 }
 
-.main-img {
-    text-align: center;
-    padding-top: 15px;
-    img {
+// .main-img {
+//     text-align: center;
+//     padding-top: 15px;
+//     img {
 
-        @include xxl {
-            height: 500px;
-            // width: 100%;
-        }
+//         @include xxl {
+//             height: 500px;
+//             // width: 100%;
+//         }
 
-        @include xl {
-            height: 55%;
-            width: 100%;
-        }
-        @include lg {
-            height: 50%;
-            width: 100%;
-        }
-        @include md {
-            height: 100%;
-            width: 100%;
-        }
-        @include sm {
-            height: 100%;
-            width: 100%;
-        }
-    }
+//         @include xl {
+//             height: 55%;
+//             width: 100%;
+//         }
+//         @include lg {
+//             height: 50%;
+//             width: 100%;
+//         }
+//         @include md {
+//             height: 100%;
+//             width: 100%;
+//         }
+//         @include sm {
+//             height: 100%;
+//             width: 100%;
+//         }
+//     }
 
-}
+// }
 
 .main-desc-p {
     padding-left: 5vw;
     font-size: 24px;
     line-height: 1.7;
     color: $basic-color;
+    @include xxl {
+        font-size: 48px;
+    }
     @include md {
         line-height: 1.5;
         font-weight: bold;

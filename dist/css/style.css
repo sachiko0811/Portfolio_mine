@@ -125,7 +125,6 @@ header {
   z-index: 1;
   width: 100%;
   height: 100px;
-  background: #fafafa;
   transition: .3s; }
   @media (max-width: 768px) {
     header .icon {
@@ -199,34 +198,14 @@ footer {
   justify-content: center;
   align-content: center; }
 
-.main-img {
-  text-align: center;
-  padding-top: 15px; }
-  @media (max-width: 2000px) {
-    .main-img img {
-      height: 500px; } }
-  @media (max-width: 1440px) {
-    .main-img img {
-      height: 55%;
-      width: 100%; } }
-  @media (max-width: 1024px) {
-    .main-img img {
-      height: 50%;
-      width: 100%; } }
-  @media (max-width: 768px) {
-    .main-img img {
-      height: 100%;
-      width: 100%; } }
-  @media (max-width: 375px) {
-    .main-img img {
-      height: 100%;
-      width: 100%; } }
-
 .main-desc-p {
   padding-left: 5vw;
   font-size: 24px;
   line-height: 1.7;
   color: #666B68; }
+  @media (max-width: 2000px) {
+    .main-desc-p {
+      font-size: 48px; } }
   @media (max-width: 768px) {
     .main-desc-p {
       line-height: 1.5;
@@ -568,9 +547,11 @@ footer {
     #about {
       padding-top: 85px; } }
 
-@media (max-width: 375px) {
-  .about-all {
-    flex-direction: column; } }
+.about-all {
+  margin-top: 100px; }
+  @media (max-width: 375px) {
+    .about-all {
+      flex-direction: column; } }
 
 .about-title {
   color: #666B68;
@@ -623,12 +604,24 @@ footer {
 
 .about-right-img img {
   width: 500px; }
+  @media (max-width: 1440px) {
+    .about-right-img img {
+      width: 300px; } }
+  @media (max-width: 768px) {
+    .about-right-img img {
+      display: none; } }
   @media (max-width: 375px) {
     .about-right-img img {
       display: none; } }
 
 .about-mobile-img {
   display: none; }
+  @media (max-width: 768px) {
+    .about-mobile-img {
+      display: block;
+      text-align: center; }
+      .about-mobile-img img {
+        width: 350px; } }
   @media (max-width: 375px) {
     .about-mobile-img {
       display: block; }
@@ -675,13 +668,14 @@ footer {
 
 #skills-all {
   height: 100vh;
+  margin-top: 100px;
   color: #666B68;
   font-family: "Lato", sans-serif; }
 
 #skills h1 {
   font-weight: bold;
   text-align: center;
-  padding: 0 5vw; }
+  padding: 10vh 5vw; }
   @media (max-width: 2000px) {
     #skills h1 {
       font-size: 24px; } }
@@ -705,22 +699,54 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  @media (max-width: 2000px) {
-    .skills-icon i {
-      padding: 20px;
-      font-size: 24px; } }
-  @media (max-width: 1440px) {
-    .skills-icon i {
-      padding: 20px;
-      font-size: 24px; } }
-  @media (max-width: 768px) {
-    .skills-icon i {
-      padding: 15px;
-      font-size: 20px; } }
-  @media (max-width: 375px) {
-    .skills-icon i {
-      padding: 10px;
-      font-size: 18px; } }
+  .skills-icon i {
+    transition: .5s; }
+    @media (max-width: 2000px) {
+      .skills-icon i {
+        padding: 20px;
+        font-size: 24px; } }
+    @media (max-width: 1440px) {
+      .skills-icon i {
+        padding: 20px;
+        font-size: 24px; } }
+    @media (max-width: 768px) {
+      .skills-icon i {
+        padding: 15px;
+        font-size: 20px; } }
+    @media (max-width: 375px) {
+      .skills-icon i {
+        padding: 10px;
+        font-size: 18px; } }
+    .skills-icon i:hover {
+      transform: scale(1.5);
+      cursor: pointer; }
+
+/*==============================
+            icons
+==============================*/
+.fa-html5:hover {
+  color: #E44D26; }
+
+.fa-css3-alt:hover {
+  color: #3573B5; }
+
+.fa-sass:hover {
+  color: #cd6799; }
+
+.fa-js-square:hover {
+  color: #f0d64f; }
+
+.fa-react:hover {
+  color: #61dbfb; }
+
+.fa-git-alt:hover {
+  color: #f1502f; }
+
+.fa-adobe:hover {
+  color: #E63523; }
+
+.fa-smile:hover {
+  color: #f0d64f; }
 
 @media (max-width: 2000px) {
   .skills-details {
@@ -766,7 +792,8 @@ footer {
   text-align: center; }
 
 #contact {
-  color: #666B68; }
+  color: #666B68;
+  padding: 50px; }
   #contact h1 {
     text-align: center;
     font-weight: bold;
@@ -791,6 +818,11 @@ footer {
       #contact h1 {
         font-size: 18px;
         padding-top: 120px; } }
+  #contact p {
+    text-align: center; }
+    #contact p a {
+      color: #666B68;
+      text-decoration: none; }
 
 .contact-form_group {
   font-family: "Lato", sans-serif; }
@@ -828,12 +860,13 @@ footer {
 
 #works-all {
   padding: 120px 10vw;
-  height: 100vh; }
+  height: 100vh;
+  margin-top: 100px; }
 
 #works h1 {
   text-align: center;
   font-size: 24px;
-  padding: 5vh 0;
+  padding: 10vh 0;
   color: #666B68; }
   @media (max-width: 2000px) {
     #works h1 {
@@ -930,7 +963,7 @@ footer {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
   cursor: pointer; }

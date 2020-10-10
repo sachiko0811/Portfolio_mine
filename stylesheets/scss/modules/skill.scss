@@ -1,5 +1,6 @@
 #skills-all {
     height: 100vh;
+    margin-top: 100px;
     // padding: 5vh 10vw 5vh;
     color: $basic-color;
     font-family: $font-family-basic;
@@ -15,7 +16,7 @@
     h1 {
         font-weight: bold;
         text-align: center;
-        padding: 0 5vw;
+        padding: 10vh 5vw;
         @include xxl {
             font-size: 24px;
             // padding: 5vh 0;
@@ -46,6 +47,7 @@
     flex-wrap: wrap;
     justify-content: center;
         i {
+            transition: .5s;
             @include xxl {
                 padding: 20px;
                 font-size: 24px;
@@ -62,8 +64,62 @@
                 padding: 10px;
                 font-size: 18px;
             }
+                &:hover {
+                    transform: scale(1.5);
+                    cursor: pointer;
+                }
             
         }
+}
+/*==============================
+            icons
+==============================*/
+.fa-html5 {
+    &:hover {
+        color: #E44D26;
+    }
+}
+
+.fa-css3-alt {
+    &:hover {
+        color: #3573B5;
+    }
+}
+
+.fa-sass {
+    &:hover {
+        color: #cd6799;
+    }
+}
+
+.fa-js-square {
+    &:hover {
+        color: #f0d64f;
+    }
+}
+
+.fa-react {
+    &:hover {
+        color: #61dbfb;
+    }
+}
+
+.fa-git-alt {
+    &:hover {
+        color: #f1502f;
+    }
+}
+
+.fa-adobe {
+    &:hover {
+        color: #E63523;
+    }
+}
+
+.fa-smile {
+    &:hover {
+        color: #f0d64f;
+    }
 }
 
 .skills-details {

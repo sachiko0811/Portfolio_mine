@@ -1,5 +1,6 @@
 #contact {
     color: $basic-color;
+    padding: 50px;
     h1 {
         text-align: center;
         font-weight: bold;
@@ -31,6 +32,13 @@
             // color: red;
         }
         
+    }
+    p {
+        text-align: center;
+        a {
+            color: $basic-color;
+            text-decoration: none;
+        }
     }
 }
 
@@ -77,3 +85,4 @@
     padding: 5px;
     font-family: $font-family-basic;
 }
+

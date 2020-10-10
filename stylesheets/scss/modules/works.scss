@@ -1,13 +1,14 @@
 #works-all {
     padding: 120px 10vw;
     height: 100vh;
+    margin-top: 100px;
 }
 
 #works {
     h1 {
         text-align: center;
         font-size: 24px;
-        padding: 5vh 0;
+        padding: 10vh 0;
         color: $basic-color;
 
         @include xxl {
@@ -117,7 +118,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    // height: 100%;
     background-color: rgba(0,0,0,.8);
     z-index: 2;
     cursor: pointer;
