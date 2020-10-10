@@ -1,5 +1,8 @@
 #home {
-  padding: 5vh 15vw;
+  padding: 5vh 10vw;
+  height: 100vh;
+  // display: flex;
+  // align-items: center;
   @include md {
     // margin-top: 100px;
   }

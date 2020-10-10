@@ -35,54 +35,59 @@
     }
     p {
         text-align: center;
+        font-size: 48px;
         a {
             color: $basic-color;
             text-decoration: none;
+            transition: .8s;
+            &:hover {
+                color: $second-green;
+            }
         }
     }
 }
 
-.contact-form_group {
-    font-family: $font-family-basic;
+// .contact-form_group {
+//     font-family: $font-family-basic;
 
-    @include xxl {
-        padding: 20px 50px;
-        width: 40%;
-        margin: 0 auto;
-    }
+//     @include xxl {
+//         padding: 20px 50px;
+//         width: 40%;
+//         margin: 0 auto;
+//     }
 
-    @include xl {
-        padding: 18px 50px;
-        width: 40%;
-        margin: 0 auto;
-    }
+//     @include xl {
+//         padding: 18px 50px;
+//         width: 40%;
+//         margin: 0 auto;
+//     }
 
-    @include md {
-        padding: 10px 50px;
-    }
+//     @include md {
+//         padding: 10px 50px;
+//     }
 
-    @include sm {
-        padding: 10px 30px;
-        width: 60%;
-        // background: red;
-    }
+//     @include sm {
+//         padding: 10px 30px;
+//         width: 60%;
+//         // background: red;
+//     }
 
-    input {
-        border: 1px solid $basic-color;
-        border-radius: 5px;
-        padding: 5px;
-        font-family: $font-family-basic;
-    }
-}
+//     input {
+//         border: 1px solid $basic-color;
+//         border-radius: 5px;
+//         padding: 5px;
+//         font-family: $font-family-basic;
+//     }
+// }
 
-.contact-label {
-    padding-bottom: 5px;
-}
+// .contact-label {
+//     padding-bottom: 5px;
+// }
 
-.contact-form_message {
-    border: 1px solid $basic-color;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: $font-family-basic;
-}
+// .contact-form_message {
+//     border: 1px solid $basic-color;
+//     border-radius: 5px;
+//     padding: 5px;
+//     font-family: $font-family-basic;
+// }
 

@@ -1,25 +1,35 @@
 .nav-laptop {
   // background-color: $basic-color;
+  justify-content: flex-end;
+
+  li {
+    transition: .5s;
+    a {
+      padding: 0 50px;
+      color: $basic-color;
+      cursor: pointer;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
   @include xl {
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
   @include lg {
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
   }
 }
 
 #nav-laptop-header {
   width: 100vw;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   // background: $basic-color;
-  justify-content: space-around;
-    a {
-      // color: #fff;
-    }
-
+  // justify-content: space-around;
+  padding: 25px 100px 10px;
   @include xl {
     width: 100vw;
     align-items: center;
@@ -39,35 +49,30 @@
   @include sm {
       display: none;
   }
-  a {
-      padding: 10px;
-      color: $basic-color;
-      cursor: pointer;
-  }
 }
 
-#nav-laptop-logo {
-  // display: inline-block;
-  padding-top: 15px;
-  width: 200px;
-  height: 80px;
-  transition: all 0.3s;
+// #nav-laptop-logo {
+//   // display: inline-block;
+//   padding-top: 15px;
+//   width: 200px;
+//   height: 80px;
+//   transition: all 0.3s;
 
-  @include xxl {
-    width: 64px;
-    height: 64px;
-  }
+//   @include xxl {
+//     width: 64px;
+//     height: 64px;
+//   }
 
-  @include xl {
-    width: 64px;
-    height: 64px;
-  }
+//   @include xl {
+//     width: 64px;
+//     height: 64px;
+//   }
 
-  @include lg {
-    width: 64px;
-    height: 64px;
-  }
-}
+//   @include lg {
+//     width: 64px;
+//     height: 64px;
+//   }
+// }
 
 .is-scrolled-logo {
   @include xxl {
@@ -349,3 +354,39 @@
     transform: translateX(-50%);
     // background: red;
   }
+
+  /*================================
+           nav-laptop-line
+  ================================*/
+
+  // #nav-laptop-header{
+  //   position: relative;
+  //   // background-color:$bg_color;
+  //   // box-shadow: 0 0 12px rgba(#000,0.26);
+    
+  //   // Menu
+  //   ul{
+  //     li {
+  //       display: inline-block;
+  //       a{
+  //         display: inline-block;
+  //         padding: 20px 20px;
+  //         font-size: 10px;
+  //       }
+  //       &.current-item a{
+  //         color:$basic-red;
+  //       }
+  //     }
+  //   }
+    
+  //   // Sliding Underline
+  //   #slide-line{
+  //     position: absolute;
+  //     bottom: 0;
+  //     height: 1px;
+  //     background-color: $basic-red;
+  //     -webkit-transition: all .3s ease;
+  //     transition: all .3s ease;
+  //     // width: 10px;
+  //   }
+  // }

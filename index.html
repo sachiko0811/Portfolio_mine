@@ -33,12 +33,13 @@
     <header class="">
         <div class="header-laptop l-flex" id="header-laptop">
             <nav class="nav-laptop l-flex" id="nav-laptop-header">
-                <li><a href="./index.html"><img src="./img/sachiko-draw-icon.svg" alt="sachiko-logo"  id="nav-laptop-logo"></a></li>
-                <li><a href="./index.html">Home</a></li>
+                <!-- <li><a href="./index.html"><img src="./img/sachiko-draw-icon.svg" alt="sachiko-logo"  id="nav-laptop-logo"></a></li> -->
+                <li class="current-item"><a href="./index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#works">Works</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <span id="slide-line"></span>
             </nav>
         </div>
 
@@ -61,28 +62,29 @@
     </header>
 
     
-    <div id="home">
+    
     
     <section class="section-main" id="main">
+        <div id="home">
     <!-- <div id="main"> -->
-        <div class="main-desc-img">
+        <div class="main-desc-img l-flex">
         <div class="main-desc-p main-slideInRight">
             <p>I'm SACHIKO.</p>
             <p>Front-End developer</p>
             <p>Based in Vancouver.</p>
         </div>
 
-        <!-- <div class="main-img">
-        <img src="./img/sahiko-photo.png" alt="sachiko yokoyama">
-        </div> -->
+        <div class="main-img">
+            <img src="./img/sachiko-draw-icon.svg" alt="sachiko-logo">
+        <!-- <img src="./img/sahiko-photo.png" alt="sachiko yokoyama"> -->
+        </div>
 
-        <div class="main-desc-second main-slideInLeft">
+        </div>
+        <!-- <div class="main-desc-second main-slideInLeft">
             <span id="ityped">I love </span>
-        </div>
-
-        </div>
+        </div> -->
     </div>
-</section>
+    </section>
 
     <section id="about" class="section-about scrollanime updown">
     <div class="about-all l-flex">
@@ -263,6 +265,7 @@
 
     <!-- <script src="./js/navmenu.js"></script> -->
     <script src="./js/header.js"></script>
+    <script src="./js/headerLaptop.js"></script>
     <script src="./js/navmenutoggle.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/scroll.js"></script>

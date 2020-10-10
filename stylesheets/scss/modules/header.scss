@@ -105,12 +105,12 @@ header {
 //   }
  .is-scrolled {
     height: 60px;
-    font-size: 14px;
+    font-size: 16px;
     background: #fafafa;
     // opacity: 0.8;
 
     @include xxl {
-        height: 85px;
+        height: 60px;
     }
 
     @include xl {
