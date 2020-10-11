@@ -223,6 +223,7 @@ footer {
       font-weight: bold; } }
   @media (max-width: 375px) {
     .main-desc-p {
+      font-size: 20px;
       line-height: 1.5;
       font-weight: bold; } }
 
@@ -585,7 +586,7 @@ footer {
 .about-title {
   color: #666B68;
   padding: 10px 5vw;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold; }
   @media (max-width: 768px) {
     .about-title {
@@ -705,15 +706,16 @@ footer {
   font-family: "Lato", sans-serif; }
 
 #skills h1 {
+  font-size: 36px;
   font-weight: bold;
   text-align: center;
   padding: 10vh 5vw; }
   @media (max-width: 2000px) {
     #skills h1 {
-      font-size: 24px; } }
+      font-size: 36px; } }
   @media (max-width: 1440px) {
     #skills h1 {
-      font-size: 24px; } }
+      font-size: 36px; } }
   @media (max-width: 1024px) {
     #skills h1 {
       font-size: 20px; } }
@@ -750,8 +752,7 @@ footer {
         padding: 10px;
         font-size: 18px; } }
     .skills-icon i:hover {
-      transform: scale(1.5);
-      cursor: pointer; }
+      transform: scale(1.5); }
 
 /*==============================
             icons
@@ -853,12 +854,43 @@ footer {
   #contact p {
     text-align: center;
     font-size: 48px; }
+    @media (max-width: 768px) {
+      #contact p {
+        font-size: 24px; } }
+    @media (max-width: 375px) {
+      #contact p {
+        font-size: 18px; } }
     #contact p a {
       color: #666B68;
       text-decoration: none;
       transition: .8s; }
       #contact p a:hover {
         color: #9CDBB9; }
+
+.contact-btn {
+  padding: 20px 40px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer; }
+  .contact-btn:after, .contact-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #666B68;
+    transition: transform .2s; }
+    .contact-btn:after:after, .contact-btn:before:after {
+      transform: translate(3px, 3px); }
+    .contact-btn:after:before, .contact-btn:before:before {
+      transform: translate(-3px, -3px); }
+    .contact-btn:after:hover:after, .contact-btn:after:hover:before, .contact-btn:before:hover:after, .contact-btn:before:hover:before {
+      transform: translate(0); }
 
 #works-all {
   padding: 120px 10vw;
@@ -867,16 +899,16 @@ footer {
 
 #works h1 {
   text-align: center;
-  font-size: 24px;
+  font-size: 36px;
   padding: 10vh 0;
   color: #666B68; }
   @media (max-width: 2000px) {
     #works h1 {
-      font-size: 24px;
+      font-size: 36px;
       padding: 5vh 0; } }
   @media (max-width: 1440px) {
     #works h1 {
-      font-size: 24px;
+      font-size: 36px;
       padding: 5vh 0; } }
   @media (max-width: 1024px) {
     #works h1 {

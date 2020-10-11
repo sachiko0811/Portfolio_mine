@@ -7,16 +7,16 @@
 #works {
     h1 {
         text-align: center;
-        font-size: 24px;
+        font-size: 36px;
         padding: 10vh 0;
         color: $basic-color;
 
         @include xxl {
-          font-size: 24px;
+          font-size: 36px;
           padding: 5vh 0;
         }
         @include xl {
-            font-size: 24px;
+            font-size: 36px;
             padding: 5vh 0;
         }
         @include lg {

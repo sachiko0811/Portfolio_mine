@@ -14,15 +14,16 @@
 
 #skills {
     h1 {
+        font-size: 36px;
         font-weight: bold;
         text-align: center;
         padding: 10vh 5vw;
         @include xxl {
-            font-size: 24px;
+            font-size: 36px;
             // padding: 5vh 0;
         }
         @include xl {
-            font-size: 24px;
+            font-size: 36px;
             // padding: 5vh 0;
         }
         @include lg {
@@ -66,7 +67,6 @@
             }
                 &:hover {
                     transform: scale(1.5);
-                    cursor: pointer;
                 }
             
         }
