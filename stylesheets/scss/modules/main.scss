@@ -102,13 +102,26 @@
         font-weight: bold;
     }
     @include sm {
-        font-size: 36px;
-        line-height: 1.2;
+        padding-left: 0px;
+        font-size: 32px;
+        line-height: 1.5;
         font-weight: bold;
         text-align: left;
+        // color: #fff;
+        //     -webkit-text-stroke: 1px $basic-color;
+        //     text-stroke: 1px $basic-color;
         // height: 100%;
         // color: $basic-color;
     }
+        span {
+            color: #fff;
+            -webkit-text-stroke: 1px $basic-color;
+            text-stroke: 1px $basic-color;
+            @include sm {
+                color: $basic-color;
+                -webkit-text-stroke: none;
+            }
+        }
 }
 
 .main-desc-second {

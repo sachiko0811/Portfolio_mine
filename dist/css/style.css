@@ -229,10 +229,19 @@ footer {
       font-weight: bold; } }
   @media (max-width: 375px) {
     .main-desc-p {
-      font-size: 36px;
-      line-height: 1.2;
+      padding-left: 0px;
+      font-size: 32px;
+      line-height: 1.5;
       font-weight: bold;
       text-align: left; } }
+  .main-desc-p span {
+    color: #fff;
+    -webkit-text-stroke: 1px #666B68;
+    text-stroke: 1px #666B68; }
+    @media (max-width: 375px) {
+      .main-desc-p span {
+        color: #666B68;
+        -webkit-text-stroke: none; } }
 
 .main-desc-second {
   font-family: futura-pt,sans-serif;
