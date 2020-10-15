@@ -22,6 +22,9 @@
 
 .main-desc-img {
     width: 100%;
+    @include sm {
+        align-content: center;
+    }
     // height: 100vh;
     // justify-content: center;
     // align-content: center;
@@ -99,9 +102,11 @@
         font-weight: bold;
     }
     @include sm {
-        font-size: 30px;
-        line-height: 1.5;
+        font-size: 36px;
+        line-height: 1.2;
         font-weight: bold;
+        text-align: left;
+        // height: 100%;
         // color: $basic-color;
     }
 }
@@ -140,10 +145,10 @@
     span {
         display: none;
         @include md {
-            display: block;
+            display: inline-block;
         }
         @include sm {
-            display: block;
+            display: inline-block;
         }
     }
 }

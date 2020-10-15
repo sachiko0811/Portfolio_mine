@@ -196,6 +196,9 @@ footer {
 
 .main-desc-img {
   width: 100%; }
+  @media (max-width: 375px) {
+    .main-desc-img {
+      align-content: center; } }
 
 .main-img {
   width: 40%;
@@ -226,9 +229,10 @@ footer {
       font-weight: bold; } }
   @media (max-width: 375px) {
     .main-desc-p {
-      font-size: 30px;
-      line-height: 1.5;
-      font-weight: bold; } }
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: bold;
+      text-align: left; } }
 
 .main-desc-second {
   font-family: futura-pt,sans-serif;
@@ -256,10 +260,10 @@ footer {
     display: none; }
     @media (max-width: 768px) {
       .main-desc-second span {
-        display: block; } }
+        display: inline-block; } }
     @media (max-width: 375px) {
       .main-desc-second span {
-        display: block; } }
+        display: inline-block; } }
 
 @keyframes main-slideInRight {
   from {
