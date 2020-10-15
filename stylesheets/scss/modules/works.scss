@@ -73,6 +73,12 @@
 /*====================================
             POP UP
 ====================================*/
+
+.popup-stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .popup {
     position: fixed;
     left: 0;

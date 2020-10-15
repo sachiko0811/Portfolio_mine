@@ -1,3 +1,5 @@
+  let body = document.body;
+  
   function popupImage() {
     // let popup = document.querySelector('works-work_work');
     // var popup = document.getElementsByClassName('works-work_work');
@@ -19,6 +21,7 @@
       if(!elem) return;
       elem.addEventListener('click', function() {
         popup.classList.toggle('is-show');
+        body.classList.toggle('popup-stop-scroll')
       });
     }
   }
@@ -43,6 +46,7 @@
       if(!elem) return;
       elem.addEventListener('click', function() {
         popup.classList.toggle('is-show');
+        body.classList.toggle('popup-stop-scroll')
       });
     }
   }
