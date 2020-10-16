@@ -121,10 +121,15 @@
 
 .about-role-name {
     color: $basic-color;
-    padding: 5px;
+    padding: 10px 5vw;
     line-height: 1.5;
+    h3 {
+        font-size: 18px;
+    }
     @include sm {
         text-align: center;
+        padding: 5px;
+        line-height: 1.5;
     }
 }
 

@@ -692,11 +692,15 @@ footer {
 
 .about-role-name {
   color: #666B68;
-  padding: 5px;
+  padding: 10px 5vw;
   line-height: 1.5; }
+  .about-role-name h3 {
+    font-size: 18px; }
   @media (max-width: 375px) {
     .about-role-name {
-      text-align: center; } }
+      text-align: center;
+      padding: 5px;
+      line-height: 1.5; } }
 
 /*==============================
            scroll
