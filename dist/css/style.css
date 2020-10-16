@@ -754,12 +754,16 @@ footer {
   margin-top: 100px;
   color: #666B68;
   font-family: "Lato", sans-serif; }
+  @media (max-width: 375px) {
+    #skills-all {
+      padding: 120px 10vw;
+      margin-top: 100px; } }
 
 #skills h1 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  padding: 10vh 5vw; }
+  padding: 10vh 0; }
   @media (max-width: 2000px) {
     #skills h1 {
       font-size: 36px; } }

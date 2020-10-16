@@ -8,6 +8,8 @@
         // padding-top: 85px;
     }
     @include sm {
+        padding: 120px 10vw;
+        margin-top: 100px;
         // padding-top: 85px;
     }
 }
@@ -17,7 +19,7 @@
         font-size: 36px;
         font-weight: bold;
         text-align: center;
-        padding: 10vh 5vw;
+        padding: 10vh 0;
         @include xxl {
             font-size: 36px;
             // padding: 5vh 0;
