@@ -5,14 +5,15 @@
         text-align: center;
         font-weight: bold;
         padding: 10px;
+        font-size: 36px;
 
         @include xxl {
-            font-size: 26px;
+            font-size: 36px;
             padding-top: 160px;
         }
 
         @include xl {
-            font-size: 24px;
+            font-size: 36px;
             padding-top: 160px;
         }
 
@@ -22,12 +23,12 @@
         }
 
         @include md {
-            font-size: 18px;
+            font-size: 28px;
             padding-top: 150px;
         }
 
         @include sm {
-            font-size: 18px;
+            font-size: 24px;
             padding-top: 120px;
             // color: red;
         }
@@ -97,17 +98,56 @@
 //     font-family: $font-family-basic;
 // }
 
+// .contact-btn {
+//     padding: 20px 40px;
+//     background: none;
+//     border: none;
+//     position: relative;
+//     text-transform: uppercase;
+//     font-weight: bold;
+//     letter-spacing: 3px;
+//     cursor: pointer;
+//     &:after, &:before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         bottom: 0;
+//         right: 0;
+//         border: 2px solid $basic-color;
+//         transition: transform .2s;
+//     &:after {
+//         transform: translate(3px, 3px);
+//     }
+//     &:before {
+//         transform: translate(-3px, -3px);
+//     }
+//     &:hover {
+//         &:after, &:before {
+//             transform: translate(0);
+//         }
+//     }
+//     }
+// }
+
+.contact-div-button {
+    text-align: center;
+    padding: 50px;
+}
+
 .contact-btn {
+    color: $basic-color;
     padding: 20px 40px;
     background: none;
     border: none;
     position: relative;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
+    justify-self: center;
     cursor: pointer;
     &:after, &:before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -115,16 +155,15 @@
         right: 0;
         border: 2px solid $basic-color;
         transition: transform .2s;
-    &:after {
-        transform: translate(3px, 3px);
-    }
-    &:before {
-        transform: translate(-3px, -3px);
-    }
-    &:hover {
-        &:after, &:before {
-            transform: translate(0);
-        }
-    }
+}
+     &:after {
+       transform: translate(3px, 3px);
+}
+     &:before {
+       transform: translate(-3px, -3px);
+}    &:hover {
+       &:after, &:before {
+         transform: translate(0);
+}
     }
 }

@@ -857,14 +857,15 @@ footer {
   #contact h1 {
     text-align: center;
     font-weight: bold;
-    padding: 10px; }
+    padding: 10px;
+    font-size: 36px; }
     @media (max-width: 2000px) {
       #contact h1 {
-        font-size: 26px;
+        font-size: 36px;
         padding-top: 160px; } }
     @media (max-width: 1440px) {
       #contact h1 {
-        font-size: 24px;
+        font-size: 36px;
         padding-top: 160px; } }
     @media (max-width: 1024px) {
       #contact h1 {
@@ -872,11 +873,11 @@ footer {
         padding-top: 160px; } }
     @media (max-width: 768px) {
       #contact h1 {
-        font-size: 18px;
+        font-size: 28px;
         padding-top: 150px; } }
     @media (max-width: 375px) {
       #contact h1 {
-        font-size: 18px;
+        font-size: 24px;
         padding-top: 120px; } }
   #contact p {
     text-align: center;
@@ -894,17 +895,22 @@ footer {
       #contact p a:hover {
         color: #9CDBB9; }
 
+.contact-div-button {
+  text-align: center;
+  padding: 50px; }
+
 .contact-btn {
+  color: #666B68;
   padding: 20px 40px;
   background: none;
   border: none;
   position: relative;
-  text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
+  justify-self: center;
   cursor: pointer; }
   .contact-btn:after, .contact-btn:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -912,16 +918,15 @@ footer {
     right: 0;
     border: 2px solid #666B68;
     transition: transform .2s; }
-    .contact-btn:after:after, .contact-btn:before:after {
-      transform: translate(3px, 3px); }
-    .contact-btn:after:before, .contact-btn:before:before {
-      transform: translate(-3px, -3px); }
-    .contact-btn:after:hover:after, .contact-btn:after:hover:before, .contact-btn:before:hover:after, .contact-btn:before:hover:before {
-      transform: translate(0); }
+  .contact-btn:after {
+    transform: translate(3px, 3px); }
+  .contact-btn:before {
+    transform: translate(-3px, -3px); }
+  .contact-btn:hover:after, .contact-btn:hover:before {
+    transform: translate(0); }
 
 #works-all {
   padding: 120px 10vw;
-  height: 100vh;
   margin-top: 100px; }
 
 #works h1 {
