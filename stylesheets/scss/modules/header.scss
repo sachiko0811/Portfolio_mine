@@ -9,6 +9,9 @@ header {
     // background: #fff;
     // background: #fafafa;
     transition: .3s;
+    background: $background-basic;
+    display: flex;
+    align-items: center;
     
     .icon {
         @include md {
@@ -119,6 +122,10 @@ header {
 
     @include lg {
         height: 80px;
+    }
+
+    @include sm {
+        height: 75px;
     }
 
     // @include md {

@@ -1,12 +1,12 @@
 #about {
-    // height: 100vh;
+    height: 100vh;
     background: #fafafa;
     @include md {
         padding-top: 85px;
         // margin-top: 200px;
     }
     @include sm {
-        padding-top: 0;
+        padding-top: 30px;
         // padding-top: 85px;
         // padding-top: 5vh;
         // padding-bottom: 5vh;
@@ -15,7 +15,7 @@
 
 .about-all {
     // width: 50%;
-    margin-top: 100px;
+    // margin-top: 100px;
     @include sm {
         flex-direction: column;
         margin-top: 0;
@@ -30,6 +30,9 @@
     @include md {
         margin-top: 50px;
         text-align: center;
+    }
+    @include sm {
+        font-size: 24px;
     }
         p {
             @include sm {
