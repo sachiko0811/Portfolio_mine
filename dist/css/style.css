@@ -603,7 +603,7 @@ footer {
            nav-laptop-line
   ================================*/
 #about {
-  height: 100vh;
+  min-height: 100vh;
   background: #fafafa; }
   @media (max-width: 768px) {
     #about {
