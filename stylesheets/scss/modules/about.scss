@@ -43,6 +43,7 @@
     color: $basic-color;
     padding: 10px 5vw;
     font-size: 18px;
+    text-align: justify;
 }
 
 .about-links {
@@ -88,7 +89,7 @@
 .about-right-img {
     align-self: flex-end;
     img {
-        width: 500px;
+        width: 350px;
         @include xl {
             width: 300px;
         }
@@ -113,8 +114,17 @@
     @include sm {
         display: block;
         img {
-            width: 300px;
+            width: 250px;
         }
+    }
+}
+
+.about-role-name {
+    color: $basic-color;
+    padding: 5px;
+    line-height: 1.5;
+    @include sm {
+        text-align: center;
     }
 }
 

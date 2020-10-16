@@ -133,10 +133,15 @@
 .contact-div-button {
     text-align: center;
     padding: 50px;
+    @include sm {
+        padding: 5px;
+    }
 }
 
 .contact-btn {
     color: $basic-color;
+    font-family: $font-family-basic;
+    // font-size: 20px;
     padding: 20px 40px;
     background: none;
     border: none;
@@ -145,6 +150,16 @@
     font-weight: bold;
     letter-spacing: 3px;
     justify-self: center;
+    a {
+        text-decoration: none;
+        color: $basic-color;
+        z-index: 3;
+    }
+    @include sm {
+        padding: 24px 26px;
+        font-size: 16px;
+        margin: 20px auto;
+    }
     cursor: pointer;
     &:after, &:before {
         content: '';

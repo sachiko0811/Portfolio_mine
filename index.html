@@ -131,21 +131,21 @@
         <div class="about-mobile-img">
             <img src="./img/sachiko_photo.jpg" alt="sachiko yokoyama">
         </div>
-        <div>
+        <div class="about-role-name">
             <p>Front-end developer</p>
             <h3>SACHIKO YOKOYAMA</h3>
         </div>
-        <p class="about-title-p">I have been focusing on building simple,
-        modern,user friendly design and websites.
+        <p class="about-title-p">In 1995, I was born in Tokyo. 
+        <br>
+        <br>
+        I have been focusing on building simple,
+        modern, user friendly design and websites.
         My favorite part of front end development is
         to work with a team and build a beautiful interface.
         <br>
         <br>
         By all means, I’m a team player and love coding.
         If you think I’m fit to your company, please keep in touch!
-        <br>
-        <br>
-        In 1995, I was born in Tokyo.
         <br>
         <br>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem eligendi impedit maxime quae magnam, consectetur, earum unde deserunt modi fugit quaerat, necessitatibus commodi nemo facilis tempore voluptatem. Tenetur, nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, beatae. 
@@ -197,7 +197,7 @@
                 <i class="fab fa-react"></i>
                 <i class="fab fa-git-alt"></i>
                 <i class="fab fa-adobe"></i>
-                <i class="far fa-smile"></i>
+                <span tooltip="smile!" flow="down"><i class="far fa-smile"></i><span>
                 <!-- <img src="./img/photoshop_icon.svg" alt=""> -->
         </div>
     </div>
@@ -298,7 +298,7 @@
         <h1>Contact</h1>
 
         <div class="contact-div-button">
-        <button class="contact-btn">osachuber@gmail.com</button>
+        <button class="contact-btn" onclick="location.href='mailto:osachuber@gmail.com';">osachuber@gmail.com</button>
         </div>
         <!-- <p class="contact-p"><a href="mailto:osachuber@gmail.com">osachuber@gmail.com</a></p> -->
     </section>
@@ -319,7 +319,7 @@
     <script>
         ityped.init(document.querySelector("#ityped"), {
     strings: [ 'I love coding!', 'Stay happy, stay positive.', 'I love taking photos!'],
-    startDelay: 200,                                                
+    startDelay: 100,                                                
     typeSpeed: 200,                                                
     backSpeed:  95,                                                
     backDelay:  150,                                                
