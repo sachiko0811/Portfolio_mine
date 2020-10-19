@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f989794e-051b-4b67-aa22-75f5bed3ddd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/navmenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stylesheets/scss/modules/nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheets/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/sass/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/navmenutoggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/navmenutoggle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/scss/modules/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/scss/modules/about.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,5 +92,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600039581135" />
+    <state x="418" y="205" width="604" height="490" key="find.popup" timestamp="1603061550555">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="418" y="205" width="604" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1603061550555" />
   </component>
 </project>

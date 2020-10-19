@@ -54,7 +54,7 @@
     color: $basic-color;
     padding: 10px 5vw;
     font-size: 24px;
- 
+
     @include sm {
         font-size: 1.5rem;
         padding: 20px;
@@ -150,18 +150,18 @@
 }
 @keyframes fadeInDown {
     0% {
-        opacity: 0;         
+        opacity: 0;
     }
     100% {
     opacity: 1;
     transform: translate(0);
     }
 }
- 
+
 /*2.上下の動きを指定*/
 .updown {transform: translateY(-100px);}
 .downup {transform: translateY(100px);}
- 
+
 /*3.左右の動きを指定*/
 .sect02{overflow: hidden;} /*横スクロールバーを隠す*/
 .slide-right {transform: translateX(200px);}
