@@ -120,7 +120,7 @@
         span {
             color: #fff;
             -webkit-text-stroke: 1px $basic-color;
-            text-stroke: 1px $basic-color;
+            // text-stroke: 1px $basic-color;
             @include sm {
                 color: $basic-color;
                 -webkit-text-stroke: none;
