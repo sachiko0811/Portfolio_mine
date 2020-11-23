@@ -354,6 +354,10 @@ footer {
     #app-cover {
       margin: 100px auto;
       width: 350px; } }
+  @media (max-width: 375px) {
+    #app-cover {
+      width: 250px;
+      height: 80px; } }
 
 #music-player {
   position: relative;
@@ -369,6 +373,9 @@ footer {
   border-radius: 15px 15px 0 0;
   transition: 0.3s ease top;
   z-index: 1; }
+  @media (max-width: 375px) {
+    #player-track {
+      padding: 24px 24px 8px 80px; } }
 
 #player-track.active {
   top: -92px; }
@@ -464,6 +471,13 @@ footer {
   box-shadow: 0 0 0 10px #fff;
   border-radius: 50%;
   overflow: hidden; }
+  @media (max-width: 375px) {
+    #album-art {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      box-shadow: 0 0 0 2px #fff;
+      top: -32px; } }
 
 #album-art.active {
   top: -60px;
@@ -544,6 +558,9 @@ footer {
   margin: 10px 0;
   float: right;
   overflow: hidden; }
+  @media (max-width: 375px) {
+    #player-controls {
+      width: 160px; } }
 
 .control {
   width: 33.333%;
@@ -557,6 +574,11 @@ footer {
   background-color: #fff;
   border-radius: 6px;
   cursor: pointer; }
+  @media (max-width: 375px) {
+    .music-player-button {
+      width: 15px;
+      height: 15px;
+      padding: 10px; } }
 
 .music-player-button i {
   display: block;
@@ -564,6 +586,9 @@ footer {
   font-size: 20px;
   text-align: center;
   line-height: 1; }
+  @media (max-width: 375px) {
+    .music-player-button i {
+      font-size: 16px; } }
 
 .music-player-button, .music-player-button i {
   transition: 0.2s ease all; }

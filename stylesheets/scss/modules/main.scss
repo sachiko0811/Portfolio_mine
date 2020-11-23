@@ -284,6 +284,11 @@
             margin: 100px auto;
             width: 350px;
         }
+
+        @include sm {
+            width: 250px;
+            height: 80px;
+        }
     }
     
     // #bg-artwork
@@ -333,6 +338,9 @@
         border-radius: 15px 15px 0 0;
         transition: 0.3s ease top;
         z-index: 1;
+        @include sm {
+            padding: 24px 24px 8px 80px;
+        }
     }
     
     #player-track.active
@@ -463,6 +471,13 @@
         box-shadow: 0 0 0 10px #fff;
         border-radius: 50%;
         overflow: hidden;
+        @include sm {
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+            box-shadow: 0 0 0 2px #fff;
+            top: -32px;
+        }
     }
     
     #album-art.active
@@ -567,6 +582,10 @@
         // margin: 0 5px 0 141px;
         float: right;
         overflow: hidden;
+        @include sm {
+            width: 160px;
+
+        }
     }
     
     .control
@@ -585,6 +604,11 @@
         // background-color: $basic-color;
         border-radius: 6px;
         cursor: pointer;
+        @include sm {
+            width: 15px;
+            height: 15px;
+            padding: 10px;
+        }
     }
     
     .music-player-button i
@@ -594,6 +618,9 @@
         font-size: 20px;
         text-align: center;
         line-height: 1;
+        @include sm {
+            font-size: 16px;
+        }
     }
     
     .music-player-button, .music-player-button i
