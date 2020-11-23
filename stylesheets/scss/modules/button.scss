@@ -7,15 +7,17 @@
         border: 1px solid $basic-color;
         margin-right: 25px;
         font-family: $font-family-basic;
+        transition: .7s;
         // color: #fff;
             a {
                 text-decoration: none;
                 color: #fff;
+                transition: .7s;
             }
             &:hover {
                 background: #fff;
                 // color: $basic-color;
-                transition: .7s;
+                // transition: .7s;
                 cursor: pointer;
                 a {
                     color: $basic-color;
@@ -34,19 +36,21 @@
         margin-right: 25px;
         color: $basic-color;
         font-family: $font-family-basic;
+        transition: .7s;
             a {
                 text-decoration: none;
                 color: #999;
+                transition: .7s;
             }
             &:hover {
                 background: #fff;
                 // color: $basic-color;
-                transition: .7s;
+                // transition: .7s;
                 cursor: pointer;
                 border: 1px solid $basic-color;
                 a {
                     color: $basic-color;
-                    transition: .7s;
+                    // transition: .7s;
                 }
             }
     }

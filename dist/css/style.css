@@ -33,13 +33,14 @@ footer {
   border-radius: 5px;
   border: 1px solid #666B68;
   margin-right: 25px;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  transition: .7s; }
   .btn-resume button a {
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    transition: .7s; }
   .btn-resume button:hover {
     background: #fff;
-    transition: .7s;
     cursor: pointer; }
     .btn-resume button:hover a {
       color: #666B68; }
@@ -52,18 +53,18 @@ footer {
   border: 1px solid #ccc;
   margin-right: 25px;
   color: #666B68;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  transition: .7s; }
   .btn-send-msg button a {
     text-decoration: none;
-    color: #999; }
+    color: #999;
+    transition: .7s; }
   .btn-send-msg button:hover {
     background: #fff;
-    transition: .7s;
     cursor: pointer;
     border: 1px solid #666B68; }
     .btn-send-msg button:hover a {
-      color: #666B68;
-      transition: .7s; }
+      color: #666B68; }
 
 @media (max-width: 375px) {
   .btn-send-msg {
@@ -204,6 +205,9 @@ footer {
 
 .main-desc-img {
   width: 100%; }
+  @media (max-width: 768px) {
+    .main-desc-img {
+      text-align: center; } }
   @media (max-width: 375px) {
     .main-desc-img {
       align-content: center; } }
@@ -344,7 +348,12 @@ footer {
   left: 0;
   width: 430px;
   height: 100px;
-  padding: 50px; }
+  padding: 50px;
+  margin: 10px 0px 10px 180px; }
+  @media (max-width: 768px) {
+    #app-cover {
+      margin: 100px auto;
+      width: 350px; } }
 
 #music-player {
   position: relative;
@@ -356,7 +365,7 @@ footer {
   top: 0;
   right: 15px;
   left: 15px;
-  padding: 13px 22px 10px 184px;
+  padding: 32px 24px 8px 160px;
   border-radius: 15px 15px 0 0;
   transition: 0.3s ease top;
   z-index: 1; }
@@ -366,13 +375,13 @@ footer {
 
 #album-name {
   color: #666B68;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold; }
 
 #track-name {
   color: #acaebd;
   font-size: 13px;
-  margin: 2px 0 13px 0; }
+  margin: 0 0 5px 0; }
 
 #track-time {
   height: 12px;
@@ -392,6 +401,7 @@ footer {
   transition: 0.3s ease all; }
 
 #track-time.active #current-time, #track-time.active #track-length {
+  color: #666B68;
   background-color: transparent; }
 
 #s-area, #seek-bar {
@@ -529,9 +539,9 @@ footer {
   opacity: 1; }
 
 #player-controls {
-  width: 250px;
+  width: 240px;
   height: 100%;
-  margin: 0 5px 0 141px;
+  margin: 10px 0;
   float: right;
   overflow: hidden; }
 
@@ -541,9 +551,9 @@ footer {
   padding: 12px 0; }
 
 .music-player-button {
-  width: 26px;
-  height: 26px;
-  padding: 25px;
+  width: 21px;
+  height: 21px;
+  padding: 15px;
   background-color: #fff;
   border-radius: 6px;
   cursor: pointer; }
@@ -551,7 +561,7 @@ footer {
 .music-player-button i {
   display: block;
   color: #666B68;
-  font-size: 26px;
+  font-size: 20px;
   text-align: center;
   line-height: 1; }
 
@@ -845,7 +855,8 @@ footer {
   ================================*/
 #about {
   min-height: 100vh;
-  background: #fafafa; }
+  background: #fafafa;
+  padding-top: 10vh; }
   @media (max-width: 768px) {
     #about {
       padding-top: 85px; } }
@@ -880,7 +891,8 @@ footer {
   color: #666B68;
   padding: 10px 5vw;
   font-size: 18px;
-  text-align: justify; }
+  text-align: justify;
+  width: 50%; }
 
 .about-links {
   color: #666B68;
@@ -916,10 +928,10 @@ footer {
 .about-right-img {
   align-self: flex-end; }
   .about-right-img img {
-    width: 350px; }
+    width: 500px; }
     @media (max-width: 1440px) {
       .about-right-img img {
-        width: 300px; } }
+        width: 450px; } }
     @media (max-width: 768px) {
       .about-right-img img {
         display: none; } }
@@ -1300,6 +1312,9 @@ footer {
 #works-all {
   padding: 120px 10vw;
   margin-top: 100px; }
+  @media (max-width: 2000px) {
+    #works-all {
+      height: 100vh; } }
 
 #works h1 {
   text-align: center;
@@ -1334,18 +1349,25 @@ footer {
 
 .works-work-btns {
   justify-content: center; }
+  @media (max-width: 768px) {
+    .works-work-btns {
+      flex-direction: column;
+      align-items: center; } }
   @media (max-width: 375px) {
     .works-work-btns {
       flex-direction: column;
       align-items: center; } }
 
 .popup-inner img {
-  width: 300px;
-  height: 200px; }
+  width: 300px; }
   @media (max-width: 375px) {
     .popup-inner img {
       width: 150px;
       height: 100px; } }
+
+@media (max-width: 768px) {
+  .popup-inner-section {
+    flex-direction: column; } }
 
 @media (max-width: 375px) {
   .popup-inner-section {
@@ -1353,6 +1375,35 @@ footer {
 
 .works-work_desc {
   padding: 10px; }
+
+.works-work_desc h2 {
+  font-weight: 900;
+  font-size: 24px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid #000; }
+
+.works-work_desc h3 {
+  font-weight: 500;
+  padding-bottom: 3px;
+  color: #666B68;
+  font-size: 18px; }
+
+.works-work_desc a {
+  color: #fafafa;
+  display: block;
+  border: 1px solid #666B68;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #666B68;
+  transition: .7s;
+  width: 180px;
+  margin: 10px auto 0; }
+  .works-work_desc a:hover {
+    background-color: #fafafa;
+    color: #666B68; }
 
 /*====================================
             POP UP
@@ -1430,6 +1481,11 @@ footer {
   z-index: 0;
   transition: 1s;
   box-sizing: border-box; }
+  @media (max-width: 768px) {
+    .btns {
+      width: 250px;
+      height: 80px;
+      font-size: 16px; } }
   @media (max-width: 375px) {
     .btns {
       width: 150px;
@@ -1453,6 +1509,10 @@ footer {
 .btns::before {
   height: 150px;
   width: 330px; }
+  @media (max-width: 768px) {
+    .btns::before {
+      height: 80px;
+      width: 230px; } }
   @media (max-width: 375px) {
     .btns::before {
       height: 50px;
@@ -1461,6 +1521,10 @@ footer {
 .btns::after {
   width: 350px;
   height: 120px; }
+  @media (max-width: 768px) {
+    .btns::after {
+      width: 250px;
+      height: 60px; } }
   @media (max-width: 375px) {
     .btns::after {
       width: 150px;

@@ -2,6 +2,9 @@
     padding: 120px 10vw;
     // height: 100vh;
     margin-top: 100px;
+    @include xxl {
+      height: 100vh;
+    }
 }
 
 #works {
@@ -42,6 +45,10 @@
 
 .works-work-btns {
   justify-content: center;
+  @include md {
+    flex-direction: column;
+    align-items: center;
+  }
   @include sm {
     flex-direction: column;
     align-items: center;
@@ -51,7 +58,10 @@
 .popup-inner {
   img {
     width: 300px;
-    height: 200px;
+    // height: 200px;
+    @include md {
+
+    }
     @include sm {
       width: 150px;
       height: 100px;
@@ -60,6 +70,9 @@
 }
 
 .popup-inner-section {
+  @include md {
+    flex-direction: column;
+  }
   @include sm {
     flex-direction: column;
   }
@@ -67,6 +80,46 @@
 
 .works-work_desc {
   padding: 10px;
+}
+
+.works-work_desc {
+  h2 {
+    font-weight: 900;
+    font-size: 24px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+  }
+
+  h3 {
+    font-weight: 500;
+    padding-bottom: 3px;
+    color: $basic-color;
+    font-size: 18px;
+  }
+
+  a {
+    // background: $
+    color: $background-basic;
+    display: block;
+    // margin-top: 10px;
+    border: 1px solid $basic-color;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: $basic-color;
+    transition: .7s;
+    width: 180px;
+    margin: 10px auto 0;
+
+    
+    &:hover {
+      background-color: $background-basic;
+      color: $basic-color;
+      // transition: .7s;
+    }
+  }
 }
 
 
@@ -158,6 +211,11 @@
   z-index: 0;
   transition: 1s;
   box-sizing: border-box;
+  @include md {
+    width: 250px;
+    height: 80px;
+    font-size: 16px;
+  }
   @include sm {
     width: 150px;
     height: 50px;
@@ -186,6 +244,10 @@
 .btns::before {
   height: 150px;
   width: 330px;
+  @include md {
+    height: 80px;
+    width: 230px;
+  }
   @include sm {
     height: 50px;
     width: 130px;
@@ -195,6 +257,10 @@
 .btns::after {
   width: 350px;
   height: 120px;
+  @include md {
+    width: 250px;
+    height: 60px;
+  }
   @include sm {
     width: 150px;
     height: 30px;

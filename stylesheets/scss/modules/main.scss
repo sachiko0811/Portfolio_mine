@@ -22,6 +22,9 @@
 
 .main-desc-img {
     width: 100%;
+    @include md {
+        text-align: center;
+    }
     @include sm {
         align-content: center;
     }
@@ -256,6 +259,12 @@
     //     margin: 0;
     //     background-color: #ffeff5;
     // }
+
+    .music-player-all {
+        // width: 100%;
+        // background: #000;
+        // color: red;
+    }
     
     #app-cover
     {
@@ -267,7 +276,14 @@
         width: 430px;
         height: 100px;
         padding: 50px;
+        margin: 10px 0px 10px 180px;
+        // background-color: #000;
+        // margin: 50px auto;
         // margin: -4px auto;
+        @include md {
+            margin: 100px auto;
+            width: 350px;
+        }
     }
     
     // #bg-artwork
@@ -311,7 +327,8 @@
         top: 0;
         right: 15px;
         left: 15px;
-        padding: 13px 22px 10px 184px;
+        padding: 32px 24px 8px 160px;
+        // padding: 13px 22px 10px 184px;
         // background-color: #fff7f7;
         border-radius: 15px 15px 0 0;
         transition: 0.3s ease top;
@@ -326,7 +343,7 @@
     #album-name
     {
         color: $basic-color;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: bold;
     }
     
@@ -334,7 +351,8 @@
     {
         color: #acaebd;
         font-size: 13px;
-        margin: 2px 0 13px 0;
+        margin: 0 0 5px 0;
+        // margin: 2px 0 13px 0;
     }
     
     #track-time
@@ -365,7 +383,7 @@
     
     #track-time.active #current-time, #track-time.active #track-length
     {
-        // color: #f86d92;
+        color: $basic-color;
         background-color: transparent;
     }
     
@@ -543,9 +561,10 @@
     
     #player-controls
     {
-        width: 250px;
+        width: 240px;
         height: 100%;
-        margin: 0 5px 0 141px;
+        margin: 10px 0;
+        // margin: 0 5px 0 141px;
         float: right;
         overflow: hidden;
     }
@@ -559,9 +578,9 @@
     
     .music-player-button
     {
-        width: 26px;
-        height: 26px;
-        padding: 25px;
+        width: 21px;
+        height: 21px;
+        padding: 15px;
         background-color: #fff;
         // background-color: $basic-color;
         border-radius: 6px;
@@ -572,7 +591,7 @@
     {
         display: block;
         color: $basic-color;
-        font-size: 26px;
+        font-size: 20px;
         text-align: center;
         line-height: 1;
     }

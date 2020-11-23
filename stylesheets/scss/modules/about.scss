@@ -1,6 +1,7 @@
 #about {
     min-height: 100vh;
     background: #fafafa;
+    padding-top: 10vh;
     @include md {
         padding-top: 85px;
         // margin-top: 200px;
@@ -48,6 +49,7 @@
     padding: 10px 5vw;
     font-size: 18px;
     text-align: justify;
+    width: 50%;
 }
 
 .about-links {
@@ -93,9 +95,9 @@
 .about-right-img {
     align-self: flex-end;
     img {
-        width: 350px;
+        width: 500px;
         @include xl {
-            width: 300px;
+            width: 450px;
         }
         @include md {
             display: none;
