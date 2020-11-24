@@ -281,13 +281,14 @@
         // margin: 50px auto;
         // margin: -4px auto;
         @include md {
-            margin: 100px auto;
-            width: 350px;
+            display: none;
+            // margin: 100px auto;
+            // width: 350px;
         }
 
         @include sm {
-            width: 250px;
-            height: 80px;
+            // width: 250px;
+            // height: 80px;
         }
     }
     
