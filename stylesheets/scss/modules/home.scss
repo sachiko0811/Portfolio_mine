@@ -1,13 +1,14 @@
 #home {
-  padding: 5vh 10vw;
-  height: 100vh;
+  // padding: 5vh 10vw;
+  // height: 100vh;
   // display: flex;
   // align-items: center;
   @include md {
     // margin-top: 100px;
+
   }
   @include sm {
-    padding: 5vh 10vw;
+    // padding: 5vh 10vw;
   }
 }
 

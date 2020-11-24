@@ -3,7 +3,7 @@
     background: #fafafa;
     padding-top: 10vh;
     @include md {
-        padding-top: 85px;
+        padding-top: 25px;
         // margin-top: 200px;
     }
     @include sm {
@@ -50,8 +50,15 @@
     font-size: 18px;
     text-align: justify;
     width: 50%;
+    @include md {
+        // padding: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
     @include sm {
+        padding: 0;
         width: 100%;
+        text-align: justify;
     }
 }
 
@@ -59,6 +66,10 @@
     color: $basic-color;
     padding: 10px 5vw;
     font-size: 24px;
+
+    @include md {
+        text-align: center;
+    }
 
     @include sm {
         font-size: 1.5rem;
@@ -87,6 +98,10 @@
     padding: 10px 5vw;
     @include xl {
         padding: 10px 5vw;
+    }
+    @include md {
+        justify-content: center;
+        // text-align: center;
     }
     @include sm {
         justify-content: center;
@@ -134,6 +149,9 @@
     line-height: 1.5;
     h3 {
         font-size: 18px;
+    }
+    @include md {
+        text-align: center;
     }
     @include sm {
         text-align: center;

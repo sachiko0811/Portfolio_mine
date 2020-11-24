@@ -24,6 +24,7 @@
     width: 100%;
     @include md {
         text-align: center;
+        justify-content: center;
     }
     @include sm {
         align-content: center;
