@@ -189,7 +189,8 @@ footer {
   height: 100vh; }
 
 .main-desc-img {
-  width: 100%; }
+  width: 100%;
+  justify-content: center; }
   @media (max-width: 768px) {
     .main-desc-img {
       text-align: center;
@@ -326,15 +327,17 @@ footer {
   100% {
     opacity: 0; } }
 
+.music-player-all {
+  position: relative;
+  align-self: flex-end;
+  height: 50%; }
+
 #app-cover {
   position: absolute;
   top: 50%;
   right: 0;
-  left: 0;
   width: 430px;
-  height: 100px;
-  padding: 50px;
-  margin: 10px 0px 10px 180px; }
+  height: 100px; }
   @media (max-width: 768px) {
     #app-cover {
       display: none; } }
