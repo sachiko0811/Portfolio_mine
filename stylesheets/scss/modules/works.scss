@@ -3,7 +3,7 @@
     // height: 100vh;
     margin-top: 100px;
     @include xxl {
-      height: 100vh;
+      // height: 100vh;
     }
 }
 
@@ -58,6 +58,7 @@
 .popup-inner {
   img {
     width: 300px;
+    // padding-right: 10px;
     // height: 200px;
     @include md {
 
@@ -67,6 +68,11 @@
       // height: 100px;
     }
   }
+}
+
+.popup-inner-image {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .popup-inner-section {
@@ -95,7 +101,7 @@
     font-weight: 500;
     padding-bottom: 3px;
     color: $basic-color;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   a {
@@ -111,7 +117,7 @@
     background-color: $basic-color;
     transition: .7s;
     width: 180px;
-    margin: 10px auto 0;
+    margin: 20px auto 0;
 
     
     &:hover {
@@ -153,7 +159,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     width: 80%;
-    max-width: 600px;
+    // max-width: 600px;
     padding: 50px;
     background-color: #fff;
     z-index: 5;
