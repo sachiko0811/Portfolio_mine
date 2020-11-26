@@ -56,6 +56,8 @@
 }
 
 .popup-inner {
+  overflow: visible scroll;
+  // height: 600px;
   img {
     width: 300px;
     // padding-right: 10px;
@@ -85,6 +87,7 @@
 }
 
 .popup-inner-section {
+  // overflow: scroll;
   @include md {
     flex-direction: column;
   }

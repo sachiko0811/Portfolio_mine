@@ -1379,16 +1379,18 @@ footer {
       flex-direction: column;
       align-items: center; } }
 
-.popup-inner img {
-  width: 300px; }
-  @media (max-width: 768px) {
-    .popup-inner img {
-      width: 250px;
-      margin-bottom: 25px; } }
-  @media (max-width: 375px) {
-    .popup-inner img {
-      width: 150px;
-      margin-bottom: 20px; } }
+.popup-inner {
+  overflow: visible scroll; }
+  .popup-inner img {
+    width: 300px; }
+    @media (max-width: 768px) {
+      .popup-inner img {
+        width: 250px;
+        margin-bottom: 25px; } }
+    @media (max-width: 375px) {
+      .popup-inner img {
+        width: 150px;
+        margin-bottom: 20px; } }
 
 .popup-inner-image {
   width: 50%;
