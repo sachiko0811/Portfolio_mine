@@ -61,10 +61,12 @@
     // padding-right: 10px;
     // height: 200px;
     @include md {
-
+      width: 250px;
+      margin-bottom: 25px;
     }
     @include sm {
       width: 150px;
+      margin-bottom: 20px;
       // height: 100px;
     }
   }
@@ -74,6 +76,12 @@
   width: 50%;
   text-align: center;
   // margin: 0 auto;
+  @include md {
+    margin: 0 auto;
+  }
+  @include sm {
+    margin: 0 auto;
+  }
 }
 
 .popup-inner-section {
@@ -90,6 +98,14 @@
   width: 50%;
   margin: 0 auto;
   align-self: center;
+  @include md {
+    width: 100%;
+    padding: 0;
+  }
+  @include sm {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .works-work_desc {
@@ -99,6 +115,14 @@
     padding-bottom: 5px;
     text-align: center;
     border-bottom: 1px solid #000;
+    @include md {
+      width: 60%;
+      margin: 0 auto;
+    }
+    @include sm {
+      font-size: 20px;
+      width: 100%;
+    }
   }
 
   h3 {
@@ -106,11 +130,22 @@
     padding-bottom: 3px;
     color: $basic-color;
     font-size: 16px;
+    @include sm {
+      font-size: 14px;
+    }
+
+  p {
+    @include sm {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
   }
 
   a {
     // background: $
-    color: $background-basic;
+    // color: $background-basic;
+    color: $basic-color;
     display: block;
     // margin-top: 10px;
     border: 1px solid $basic-color;
@@ -118,20 +153,59 @@
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    background-color: $basic-color;
+    background-color: $background-basic;
     transition: .7s;
     width: 180px;
     margin: 20px auto 0;
 
     
     &:hover {
-      background-color: $background-basic;
-      color: $basic-color;
+      background-color: $basic-color;
+      color: $background-basic;
       // transition: .7s;
     }
   }
 }
 
+.works-work_detail {
+  @include md {
+    width: 60%;
+    margin: 0 auto;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+
+.works-detail_colors {
+  // padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  @include md {
+    flex-direction: column;
+  }
+}
+
+.works-detail_color {
+  flex-direction: row;
+  p {
+    font-size: 14px;
+    padding: 12px 12px 0;
+    @include md {
+      padding-top: 12px;
+      padding-left: 10px;
+    }
+  }
+}
+
+.works-work_circle {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 5px;
+  // background: $basic-color;
+}
 
 /*====================================
             POP UP

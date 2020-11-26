@@ -1381,13 +1381,24 @@ footer {
 
 .popup-inner img {
   width: 300px; }
+  @media (max-width: 768px) {
+    .popup-inner img {
+      width: 250px;
+      margin-bottom: 25px; } }
   @media (max-width: 375px) {
     .popup-inner img {
-      width: 150px; } }
+      width: 150px;
+      margin-bottom: 20px; } }
 
 .popup-inner-image {
   width: 50%;
   text-align: center; }
+  @media (max-width: 768px) {
+    .popup-inner-image {
+      margin: 0 auto; } }
+  @media (max-width: 375px) {
+    .popup-inner-image {
+      margin: 0 auto; } }
 
 @media (max-width: 768px) {
   .popup-inner-section {
@@ -1402,6 +1413,14 @@ footer {
   width: 50%;
   margin: 0 auto;
   align-self: center; }
+  @media (max-width: 768px) {
+    .works-work_desc {
+      width: 100%;
+      padding: 0; } }
+  @media (max-width: 375px) {
+    .works-work_desc {
+      width: 100%;
+      padding: 0; } }
 
 .works-work_desc h2 {
   font-weight: 900;
@@ -1409,28 +1428,76 @@ footer {
   padding-bottom: 5px;
   text-align: center;
   border-bottom: 1px solid #000; }
+  @media (max-width: 768px) {
+    .works-work_desc h2 {
+      width: 60%;
+      margin: 0 auto; } }
+  @media (max-width: 375px) {
+    .works-work_desc h2 {
+      font-size: 20px;
+      width: 100%; } }
 
 .works-work_desc h3 {
   font-weight: 500;
   padding-bottom: 3px;
   color: #666B68;
   font-size: 16px; }
+  @media (max-width: 375px) {
+    .works-work_desc h3 {
+      font-size: 14px; } }
+  @media (max-width: 375px) {
+    .works-work_desc h3 p {
+      font-size: 16px;
+      line-height: 1.5; } }
 
 .works-work_desc a {
-  color: #fafafa;
+  color: #666B68;
   display: block;
   border: 1px solid #666B68;
   padding: 5px;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
-  background-color: #666B68;
+  background-color: #fafafa;
   transition: .7s;
   width: 180px;
   margin: 20px auto 0; }
   .works-work_desc a:hover {
-    background-color: #fafafa;
-    color: #666B68; }
+    background-color: #666B68;
+    color: #fafafa; }
+
+@media (max-width: 768px) {
+  .works-work_detail {
+    width: 60%;
+    margin: 0 auto; } }
+
+@media (max-width: 375px) {
+  .works-work_detail {
+    width: 100%; } }
+
+.works-detail_colors {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .works-detail_colors {
+      flex-direction: column; } }
+
+.works-detail_color {
+  flex-direction: row; }
+  .works-detail_color p {
+    font-size: 14px;
+    padding: 12px 12px 0; }
+    @media (max-width: 768px) {
+      .works-detail_color p {
+        padding-top: 12px;
+        padding-left: 10px; } }
+
+.works-work_circle {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 5px; }
 
 /*====================================
             POP UP
