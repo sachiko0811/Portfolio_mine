@@ -73,6 +73,10 @@
     font-size: 18px;
     text-align: justify;
     width: 70%;
+    @include lg {
+        text-align: center;
+        margin: 0 auto;
+    }
     @include md {
         // padding: 0;
         text-align: center;
@@ -89,6 +93,10 @@
     color: $basic-color;
     padding: 10px 0;
     font-size: 24px;
+
+    @include lg {
+        text-align: center;
+    }
 
     @include md {
         text-align: center;
@@ -123,6 +131,9 @@
     @include xl {
         padding: 10px 0;
     }
+    @include lg {
+        justify-content: center;
+    }
     @include md {
         justify-content: center;
         // text-align: center;
@@ -134,9 +145,9 @@
     }
 }
 
-.about-right {
+// .about-right {
 
-}
+// }
 
 .about-right-img {
     align-self: flex-end;
@@ -146,6 +157,9 @@
         width: 350px;
         @include xl {
             width: 450px;
+        }
+        @include lg {
+            display: none;
         }
         @include md {
             display: none;
@@ -164,6 +178,9 @@
     left: 170px;
     background-color: $basic-color;
     z-index: -1;
+    @include lg {
+        display: none;
+    }
     @include md {
         display: none;
     }
