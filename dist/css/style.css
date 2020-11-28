@@ -982,6 +982,9 @@ footer {
   left: 170px;
   background-color: #666B68;
   z-index: -1; }
+  @media (max-width: 768px) {
+    .about-right-square {
+      display: none; } }
 
 .about-mobile-img {
   display: none; }

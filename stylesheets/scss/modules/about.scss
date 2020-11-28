@@ -164,6 +164,9 @@
     left: 170px;
     background-color: $basic-color;
     z-index: -1;
+    @include md {
+        display: none;
+    }
 }
 
 .about-mobile-img {
