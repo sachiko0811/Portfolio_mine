@@ -887,6 +887,9 @@ footer {
 
 .about-left {
   width: 50%; }
+  @media (max-width: 1024px) {
+    .about-left {
+      width: 100%; } }
 
 .about-title {
   color: #666B68;
@@ -921,7 +924,6 @@ footer {
       margin: 0 auto; } }
   @media (max-width: 375px) {
     .about-title-p {
-      padding: 5vh 5vw 5vh 0;
       width: 100%;
       text-align: justify; } }
 
@@ -1014,7 +1016,8 @@ footer {
     .about-mobile-img {
       display: block; }
       .about-mobile-img img {
-        width: 250px; } }
+        width: 250px;
+        padding-bottom: 30px; } }
 
 .about-role-name {
   color: #666B68;
@@ -1045,10 +1048,11 @@ footer {
 
 @keyframes fadeInDown {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translateY(-100px); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translateY(0); } }
 
 /*2.上下の動きを指定*/
 .updown {
@@ -1069,7 +1073,6 @@ footer {
   transform: translateX(-200px); }
 
 #skills-all {
-  height: 100vh;
   margin-top: 100px;
   color: #666B68;
   font-family: "Lato", sans-serif; }
@@ -1402,6 +1405,7 @@ footer {
   justify-content: center; }
 
 .works-work-btns {
+  flex-wrap: wrap;
   justify-content: center; }
   @media (max-width: 768px) {
     .works-work-btns {
@@ -1563,6 +1567,12 @@ footer {
   padding: 50px;
   background-color: #fff;
   z-index: 5; }
+  @media (max-width: 375px) {
+    .popup-inner {
+      left: 0;
+      top: 0;
+      transform: none;
+      padding: 20px 10vw; } }
 
 .close-btn {
   position: absolute;

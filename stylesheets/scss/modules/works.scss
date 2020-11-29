@@ -2,9 +2,6 @@
     padding: 120px 10vw;
     // height: 100vh;
     margin-top: 100px;
-    @include xxl {
-      // height: 100vh;
-    }
 }
 
 #works {
@@ -44,6 +41,7 @@
 }
 
 .works-work-btns {
+  flex-wrap: wrap;
   justify-content: center;
   @include md {
     flex-direction: column;
@@ -245,6 +243,14 @@
     background-color: #fff;
     z-index: 5;
     // z-index: 100000;
+    @include sm {
+      left: 0;
+      top: 0;
+      transform: none;
+      // width: 100%;
+      padding: 20px 10vw;
+      // padding: 0 10vw 20px;
+    }
   }
 
   .close-btn {

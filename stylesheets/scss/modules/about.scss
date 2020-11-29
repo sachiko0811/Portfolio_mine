@@ -45,6 +45,9 @@
 
 .about-left {
     width: 50%;
+    @include lg {
+        width: 100%;
+    }
 }
 
 .about-title {
@@ -58,6 +61,7 @@
     }
     @include sm {
         font-size: 24px;
+        // text-align: center;
     }
         p {
             @include sm {
@@ -83,7 +87,7 @@
         margin: 0 auto;
     }
     @include sm {
-        padding: 5vh 5vw 5vh 0;
+        // padding: 5vh 5vw 5vh 0;
         width: 100%;
         text-align: justify;
     }
@@ -199,6 +203,7 @@
         display: block;
         img {
             width: 250px;
+            padding-bottom: 30px;
         }
     }
 }
@@ -234,10 +239,12 @@
 @keyframes fadeInDown {
     0% {
         opacity: 0;
+        transform: translateY(-100px)
     }
     100% {
     opacity: 1;
-    transform: translate(0);
+    // transform: translate(0);
+    transform: translateY(0);
     }
 }
 
