@@ -1443,7 +1443,8 @@ footer {
 
 @media (max-width: 375px) {
   .popup-inner-section {
-    flex-direction: column; } }
+    flex-direction: column;
+    padding: 5vh 10vw; } }
 
 .works-work_desc {
   padding: 10px;
@@ -1510,7 +1511,8 @@ footer {
 
 @media (max-width: 375px) {
   .works-work_detail {
-    width: 100%; } }
+    width: 100%;
+    overflow: auto; } }
 
 .works-detail_colors {
   display: flex;
@@ -1569,10 +1571,14 @@ footer {
   z-index: 5; }
   @media (max-width: 375px) {
     .popup-inner {
-      left: 0;
-      top: 0;
+      position: static;
+      height: 100%;
+      width: 100%;
+      overflow: scroll;
       transform: none;
-      padding: 20px 10vw; } }
+      left: none;
+      top: none;
+      padding: 0; } }
 
 .close-btn {
   position: absolute;
@@ -1597,6 +1603,9 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
   cursor: pointer; }
+  @media (max-width: 375px) {
+    .black-background {
+      display: none; } }
 
 /*====================================
             btns
