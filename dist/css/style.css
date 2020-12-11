@@ -62,9 +62,9 @@ footer {
   .btn-send-msg button:hover {
     background: #fff;
     cursor: pointer;
-    border: 1px solid #666B68; }
+    border: 1px solid #BFB378; }
     .btn-send-msg button:hover a {
-      color: #666B68; }
+      color: #BFB378; }
 
 @media (max-width: 375px) {
   .btn-send-msg {
@@ -431,7 +431,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: #9CDBB9;
+  background-color: #BFB378;
   transition: 0.2s ease width;
   z-index: 1; }
 
@@ -944,11 +944,11 @@ footer {
       text-align-last: justify; } }
   .about-links i {
     padding: 10px;
-    color: #666B68; }
+    color: #666B68;
+    transition: .7s; }
     .about-links i:hover {
-      color: #9CDBB9;
-      transform: scale(1.3);
-      transition: .7s; }
+      color: #BFB378;
+      transform: scale(1.3); }
     .about-links i:visited {
       color: red; }
 
@@ -1325,7 +1325,7 @@ footer {
       text-decoration: none;
       transition: .8s; }
       #contact p a:hover {
-        color: #9CDBB9; }
+        color: #BFB378; }
 
 .contact-div-button {
   text-align: center;

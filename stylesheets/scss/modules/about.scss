@@ -114,11 +114,12 @@
         i {
             padding: 10px;
             color: $basic-color;
+            transition: .7s;
 
             &:hover {
                 color: $second-green;
                 transform: scale(1.3);
-                transition: .7s;
+                // transition: .7s;
             }
 
             &:visited {
@@ -181,6 +182,7 @@
     top: 110px;
     left: 170px;
     background-color: $basic-color;
+    // background-color: $second-green;
     z-index: -1;
     @include lg {
         display: none;
