@@ -864,7 +864,8 @@ footer {
       padding-top: 30px; } }
   #about h1 {
     font-size: 36px;
-    font-weight: bold; }
+    font-weight: bold;
+    padding: 5vh 0 10vh; }
     @media (max-width: 1024px) {
       #about h1 {
         font-size: 20px; } }
@@ -908,12 +909,30 @@ footer {
       margin-top: 25px;
       font-size: 16px; } }
 
+.about-role-name {
+  color: #fafafa;
+  background: #666B68;
+  width: 80%;
+  padding: 15px;
+  line-height: 1.5; }
+  .about-role-name h3 {
+    font-size: 18px; }
+  @media (max-width: 768px) {
+    .about-role-name {
+      text-align: center; } }
+  @media (max-width: 375px) {
+    .about-role-name {
+      text-align: center;
+      padding: 5px;
+      line-height: 1.5; } }
+
 .about-title-p {
   color: #666B68;
-  padding: 10px 0;
   font-size: 18px;
-  text-align: justify;
-  width: 70%; }
+  width: 70%;
+  margin-top: 10px;
+  padding: 15px 0px;
+  line-height: 1.3; }
   @media (max-width: 1024px) {
     .about-title-p {
       text-align: center;
@@ -970,8 +989,10 @@ footer {
       justify-content: center;
       flex-wrap: nowrap; } }
 
+.about-right {
+  align-self: center; }
+
 .about-right-img {
-  align-self: flex-end;
   position: relative; }
   .about-right-img img {
     z-index: 2;
@@ -995,7 +1016,7 @@ footer {
   width: 200px;
   top: 110px;
   left: 170px;
-  background-color: #666B68;
+  background-color: #BFB378;
   z-index: -1; }
   @media (max-width: 1024px) {
     .about-right-square {
@@ -1018,20 +1039,6 @@ footer {
       .about-mobile-img img {
         width: 250px;
         padding-bottom: 30px; } }
-
-.about-role-name {
-  color: #666B68;
-  line-height: 1.5; }
-  .about-role-name h3 {
-    font-size: 18px; }
-  @media (max-width: 768px) {
-    .about-role-name {
-      text-align: center; } }
-  @media (max-width: 375px) {
-    .about-role-name {
-      text-align: center;
-      padding: 5px;
-      line-height: 1.5; } }
 
 /*==============================
            scroll
