@@ -85,6 +85,8 @@
     }
     @include md {
         text-align: center;
+        margin: 20px auto;
+        width: 300px;
     }
     @include sm {
         text-align: center;
@@ -171,6 +173,7 @@
     }
     @include md {
         justify-content: center;
+        margin: 20px 0 20px 20px;
         // text-align: center;
     }
     @include sm {

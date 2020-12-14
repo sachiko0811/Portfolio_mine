@@ -204,6 +204,9 @@ footer {
   text-align: center;
   padding-left: 150px;
   padding-top: 200px; }
+  @media (max-width: 1024px) {
+    .main-img {
+      padding: 0; } }
   @media (max-width: 768px) {
     .main-img {
       display: none; } }
@@ -226,8 +229,12 @@ footer {
   @media (max-width: 2000px) {
     .main-desc-p {
       font-size: 48px; } }
+  @media (max-width: 1024px) {
+    .main-desc-p {
+      width: 50%; } }
   @media (max-width: 768px) {
     .main-desc-p {
+      width: 100%;
       line-height: 1.5;
       font-weight: bold; } }
   @media (max-width: 375px) {
@@ -235,8 +242,7 @@ footer {
       padding-left: 0px;
       font-size: 32px;
       line-height: 1.5;
-      font-weight: bold;
-      text-align: left; } }
+      font-weight: bold; } }
   .main-desc-p span {
     color: #fff;
     -webkit-text-stroke: 1px #666B68; }
@@ -338,6 +344,9 @@ footer {
   right: 0;
   width: 430px;
   height: 100px; }
+  @media (max-width: 1024px) {
+    #app-cover {
+      display: none; } }
   @media (max-width: 768px) {
     #app-cover {
       display: none; } }
@@ -919,7 +928,9 @@ footer {
     font-size: 18px; }
   @media (max-width: 768px) {
     .about-role-name {
-      text-align: center; } }
+      text-align: center;
+      margin: 20px auto;
+      width: 300px; } }
   @media (max-width: 375px) {
     .about-role-name {
       text-align: center;
@@ -983,7 +994,8 @@ footer {
       justify-content: center; } }
   @media (max-width: 768px) {
     .about-btns {
-      justify-content: center; } }
+      justify-content: center;
+      margin: 20px 0 20px 20px; } }
   @media (max-width: 375px) {
     .about-btns {
       justify-content: center;
@@ -1576,6 +1588,16 @@ footer {
   padding: 50px;
   background-color: #fff;
   z-index: 5; }
+  @media (max-width: 768px) {
+    .popup-inner {
+      position: static;
+      height: 100%;
+      width: 100%;
+      overflow: scroll;
+      transform: none;
+      left: none;
+      top: none;
+      padding: 0; } }
   @media (max-width: 375px) {
     .popup-inner {
       position: static;
@@ -1610,6 +1632,9 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
   cursor: pointer; }
+  @media (max-width: 768px) {
+    .black-background {
+      display: none; } }
   @media (max-width: 375px) {
     .black-background {
       display: none; } }
