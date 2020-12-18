@@ -1511,14 +1511,14 @@ footer {
   color: #666B68;
   display: block;
   border: 1px solid #666B68;
-  padding: 5px;
+  padding: 15px;
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
   background-color: #fafafa;
   transition: .7s;
   width: 180px;
-  margin: 20px auto 0; }
+  margin: 50px auto 0; }
   .works-work_desc a:hover {
     background-color: #666B68;
     color: #fafafa; }
