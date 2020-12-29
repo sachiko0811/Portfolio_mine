@@ -67,7 +67,7 @@ module.exports = {
         openPage: "index.html",
         compress: true,
         open: true,
-        port: 3000,
+        port: 8888,
         inline: true
     }
 };
