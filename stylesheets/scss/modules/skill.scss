@@ -109,9 +109,22 @@
     }
 }
 
+.fa-wordpress {
+
+    &:hover {
+        color: #00669e;
+    }
+}
+
 .fa-git-alt {
     &:hover {
         color: #f1502f;
+    }
+}
+
+.fa-aws {
+    &:hover {
+        color: #ff9124;
     }
 }
 

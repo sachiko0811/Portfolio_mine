@@ -1167,8 +1167,14 @@ footer {
 .fa-react:hover {
   color: #61dbfb; }
 
+.fa-wordpress:hover {
+  color: #00669e; }
+
 .fa-git-alt:hover {
   color: #f1502f; }
+
+.fa-aws:hover {
+  color: #ff9124; }
 
 .fa-adobe:hover {
   color: #E63523; }
