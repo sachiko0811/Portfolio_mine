@@ -52,6 +52,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include sm {
+        margin: 0 auto;
+        max-width: 250px;
+    }
         i {
             transition: .5s;
             @include xxl {
@@ -122,6 +126,12 @@
     }
 }
 
+.fa-docker {
+    &:hover {
+        color: #2189e6;
+    }
+}
+
 .fa-aws {
     &:hover {
         color: #ff9124;
@@ -161,6 +171,14 @@
 }
 
 .skills-detail {
+    @include md {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    @include sm {
+        max-width: 250px;
+        margin: 0 auto;
+    }
     h3 {
         color: #fff;
         text-align: center;

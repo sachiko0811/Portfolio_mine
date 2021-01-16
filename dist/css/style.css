@@ -1128,6 +1128,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  @media (max-width: 375px) {
+    .skills-icon {
+      margin: 0 auto;
+      max-width: 250px; } }
   .skills-icon i {
     transition: .5s; }
     @media (max-width: 2000px) {
@@ -1173,6 +1177,9 @@ footer {
 .fa-git-alt:hover {
   color: #f1502f; }
 
+.fa-docker:hover {
+  color: #2189e6; }
+
 .fa-aws:hover {
   color: #ff9124; }
 
@@ -1201,6 +1208,16 @@ footer {
   .skills-details {
     padding-top: 10vh;
     padding-bottom: 10vh; } }
+
+@media (max-width: 768px) {
+  .skills-detail {
+    max-width: 350px;
+    margin: 0 auto; } }
+
+@media (max-width: 375px) {
+  .skills-detail {
+    max-width: 250px;
+    margin: 0 auto; } }
 
 .skills-detail h3 {
   color: #fff;
@@ -1381,9 +1398,10 @@ footer {
     z-index: 3; }
   @media (max-width: 375px) {
     .contact-btn {
-      padding: 24px 26px;
-      font-size: 16px;
-      margin: 20px auto; } }
+      padding: 15px 30px;
+      font-size: 14px;
+      margin: 10px auto;
+      letter-spacing: 1px; } }
   .contact-btn:after, .contact-btn:before {
     content: '';
     position: absolute;
@@ -1399,6 +1417,10 @@ footer {
     transform: translate(-3px, -3px); }
   .contact-btn:hover:after, .contact-btn:hover:before {
     transform: translate(0); }
+
+@media (max-width: 375px) {
+  .contact-btn__message {
+    font-size: 14px; } }
 
 #works-all {
   padding: 120px 10vw;

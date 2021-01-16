@@ -156,9 +156,10 @@
         z-index: 3;
     }
     @include sm {
-        padding: 24px 26px;
-        font-size: 16px;
-        margin: 20px auto;
+        padding: 15px 30px;
+        font-size: 14px;
+        margin: 10px auto;
+        letter-spacing: 1px;
     }
     cursor: pointer;
     &:after, &:before {
@@ -180,5 +181,11 @@
        &:after, &:before {
          transform: translate(0);
 }
+    }
+}
+
+.contact-btn__message {
+    @include sm {
+        font-size: 14px;
     }
 }
