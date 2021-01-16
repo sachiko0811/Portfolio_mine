@@ -2,6 +2,12 @@
     padding: 120px 10vw;
     // height: 100vh;
     margin-top: 100px;
+    @include md {
+      padding-top: 120px;
+    }
+    @include sm {
+      padding-top: 120px;
+    }
 }
 
 #works {

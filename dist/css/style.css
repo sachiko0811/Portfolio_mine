@@ -875,6 +875,12 @@ footer {
     font-size: 36px;
     font-weight: bold;
     padding: 5vh 0 10vh; }
+    @media (max-width: 2000px) {
+      #about h1 {
+        padding: 5vh 0; } }
+    @media (max-width: 1440px) {
+      #about h1 {
+        padding: 5vh 0; } }
     @media (max-width: 1024px) {
       #about h1 {
         font-size: 20px; } }
@@ -1093,6 +1099,7 @@ footer {
 
 #skills-all {
   margin-top: 100px;
+  padding: 120px 10vw;
   color: #666B68;
   font-family: "Lato", sans-serif; }
   @media (max-width: 768px) {
@@ -1420,11 +1427,17 @@ footer {
 
 @media (max-width: 375px) {
   .contact-btn__message {
-    font-size: 14px; } }
+    font-size: 10px; } }
 
 #works-all {
   padding: 120px 10vw;
   margin-top: 100px; }
+  @media (max-width: 768px) {
+    #works-all {
+      padding-top: 120px; } }
+  @media (max-width: 375px) {
+    #works-all {
+      padding-top: 120px; } }
 
 #works h1 {
   text-align: center;
