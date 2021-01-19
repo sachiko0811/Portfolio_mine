@@ -883,7 +883,7 @@ footer {
         padding: 5vh 0; } }
     @media (max-width: 1024px) {
       #about h1 {
-        font-size: 20px; } }
+        font-size: 28px; } }
     @media (max-width: 768px) {
       #about h1 {
         font-size: 28px;
@@ -912,6 +912,10 @@ footer {
   padding: 10px 0;
   font-size: 36px;
   font-weight: bold; }
+  @media (max-width: 1024px) {
+    .about-title {
+      margin-top: 50px;
+      text-align: center; } }
   @media (max-width: 768px) {
     .about-title {
       margin-top: 50px;
@@ -932,6 +936,11 @@ footer {
   line-height: 1.5; }
   .about-role-name h3 {
     font-size: 18px; }
+  @media (max-width: 1024px) {
+    .about-role-name {
+      text-align: center;
+      margin: 20px auto;
+      width: 300px; } }
   @media (max-width: 768px) {
     .about-role-name {
       text-align: center;
@@ -1014,10 +1023,10 @@ footer {
   position: relative; }
   .about-right-img img {
     z-index: 2;
-    width: 350px; }
+    width: 380px; }
     @media (max-width: 1440px) {
       .about-right-img img {
-        width: 450px; } }
+        width: 380px; } }
     @media (max-width: 1024px) {
       .about-right-img img {
         display: none; } }
@@ -1030,10 +1039,10 @@ footer {
 
 .about-right-square {
   position: absolute;
-  height: 200px;
-  width: 200px;
-  top: 110px;
-  left: 170px;
+  height: 230px;
+  width: 330px;
+  top: 160px;
+  left: 160px;
   background-color: #BFB378;
   z-index: -1; }
   @media (max-width: 1024px) {
@@ -1045,6 +1054,14 @@ footer {
 
 .about-mobile-img {
   display: none; }
+  @media (max-width: 1024px) {
+    .about-mobile-img {
+      display: block;
+      text-align: center; }
+      .about-mobile-img img {
+        width: 350px;
+        border: 15px solid #fafafa;
+        padding-bottom: 30px; } }
   @media (max-width: 768px) {
     .about-mobile-img {
       display: block;
