@@ -1,5 +1,4 @@
 .nav-laptop {
-  // background-color: $basic-color;
   justify-content: flex-end;
 
   li {
@@ -14,32 +13,21 @@
     }
   }
   @include xl {
-    // justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
   @include lg {
-    // justify-content: space-evenly;
   }
 }
 
 #nav-laptop-header {
   width: 100vw;
-  // align-items: center;
-  // justify-content: center;
-  // background: $basic-color;
-  // justify-content: space-around;
-  // padding: 25px 100px 10px;
   @include xl {
     width: 100vw;
-    // align-items: center;
-    // justify-content: center;
   }
 
   @include lg {
       width: 100vw;
-      // align-items: center;
-      // justify-content: center;
   }
 
   @include md {
@@ -51,41 +39,16 @@
   }
 }
 
-// #nav-laptop-logo {
-//   // display: inline-block;
-//   padding-top: 15px;
-//   width: 200px;
-//   height: 80px;
-//   transition: all 0.3s;
-
-//   @include xxl {
-//     width: 64px;
-//     height: 64px;
-//   }
-
-//   @include xl {
-//     width: 64px;
-//     height: 64px;
-//   }
-
-//   @include lg {
-//     width: 64px;
-//     height: 64px;
-//   }
-// }
-
 .is-scrolled-logo {
   @include xxl {
     width: 48px;
     height: 48px;
-    // background: crimson;
   }
 
   @include xl {
     width: 48px;
     height: 48px;
   }
-  // background:red;
 }
 
 .nav-second {
@@ -105,10 +68,8 @@
 
     @include md {
         display: block;
-        // align-self: center;
         margin: 35px;
         width: 100%;
-        // text-align: end;
     }
     @include sm {
         margin: 0;
@@ -145,10 +106,8 @@
 }
 
 .nav-second-nav {
-    // background: #fafafa;
     position: fixed;
     top: 120px;
-    // top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -206,20 +165,16 @@
 
 .nav-toggle i:nth-child(1) {
     top: 5px;
-    // width: 50%;
-    // margin: 2px;
 }
 
 .nav-toggle i:nth-child(2) {
     top: 5px;
     bottom: 5px;
     margin: auto;
-    // display: none;
 }
 
 .nav-toggle i:nth-child(3) {
     bottom: 5px;
-    // width: 50%;
 }
 
 // After Click
@@ -238,9 +193,7 @@
 
 .nav-second-nav.show {
     opacity: 1;
-    // background: cornflowerblue;
     background: #fafafa;
-    // background: $basic-color;
     visibility: visible;
     z-index: 1;
 }
@@ -252,8 +205,6 @@
     position: relative;
     width: 34px;
     height: 24px;
-    // width: 40px;
-    // height: 44px;
     cursor: pointer;
     @include sm {
       position: absolute;
@@ -266,7 +217,6 @@
     position: absolute;
     left: 0;
     width: 100%;
-    // width: 75%;
     height: 4px;
     background-color: $basic-color;
     border-radius: 4px;
@@ -281,7 +231,6 @@
   }
   .btn-trigger span:nth-of-type(2) {
       top: 10px;
-    // top: 20px;
   }
   .btn-trigger span:nth-of-type(3) {
     bottom: 0;
@@ -296,15 +245,11 @@
     left: 50%;
     display: block;
     content: '';
-    // width: 84px;
-    // height: 84px;
     width: 64px;
     height: 64px;
     margin: -36px 0 0 -36px;
-    // margin: -45px 0 0 -45px;
     border-radius: 50%;
     border: 4px solid rgba($basic-color, 0);
-    // border: 4px solid rgba(255, 255, 255, 0);
     transition: all .75s;
     @include sm {
       width: 50px;
@@ -316,8 +261,6 @@
   #btn17.active span:nth-of-type(1) {
     -webkit-transform: translateY(10px) rotate(45deg);
     transform: translateY(10px) rotate(45deg);
-    // -webkit-transform: translateY(20px) rotate(45deg);
-    // transform: translateY(20px) rotate(45deg);
   }
   #btn17.active span:nth-of-type(2) {
     left: 60%;
@@ -338,8 +281,6 @@
   #btn17.active span:nth-of-type(3) {
     -webkit-transform: translateY(-10px) rotate(-45deg);
     transform: translateY(-10px) rotate(-45deg);
-    // -webkit-transform: translateY(-20px) rotate(-45deg);
-    // transform: translateY(-20px) rotate(-45deg);
   }
   #btn17.active::after {
     border: 4px solid $basic-color;
@@ -352,41 +293,4 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    // background: red;
   }
-
-  /*================================
-           nav-laptop-line
-  ================================*/
-
-  // #nav-laptop-header{
-  //   position: relative;
-  //   // background-color:$bg_color;
-  //   // box-shadow: 0 0 12px rgba(#000,0.26);
-    
-  //   // Menu
-  //   ul{
-  //     li {
-  //       display: inline-block;
-  //       a{
-  //         display: inline-block;
-  //         padding: 20px 20px;
-  //         font-size: 10px;
-  //       }
-  //       &.current-item a{
-  //         color:$basic-red;
-  //       }
-  //     }
-  //   }
-    
-  //   // Sliding Underline
-  //   #slide-line{
-  //     position: absolute;
-  //     bottom: 0;
-  //     height: 1px;
-  //     background-color: $basic-red;
-  //     -webkit-transition: all .3s ease;
-  //     transition: all .3s ease;
-  //     // width: 10px;
-  //   }
-  // }

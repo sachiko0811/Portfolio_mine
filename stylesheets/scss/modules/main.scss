@@ -1,23 +1,5 @@
 #main {
-    // margin-top: 100px;
     height: 100vh;
-    @include xxl {
-        // height: 100vh;
-    }
-
-    @include xl {
-        // height: 100vh;
-    }
-    
-    @include lg {
-        // height: 100vh;
-    }
-    @include md {
-        // height: 100vh;
-    }
-    @include sm {
-        // height: 100vh
-    }
 }
 
 .main-desc-img {
@@ -30,22 +12,13 @@
     @include sm {
         align-content: center;
     }
-    // height: 100vh;
-    // justify-content: center;
-    // align-content: center;
-    // align-items: center;
 }
 
 .main-img {
     width: 40%;
-    // height: 100%;
     text-align: center;
     padding-left: 150px;
     padding-top: 200px;
-    // align-self: flex-end;
-    // align-self: center;
-    // align-content: center;
-    // padding: 50px;
     @include lg {
         padding: 0;
     }
@@ -59,51 +32,14 @@
             width: 300px;
             height: 300px;
         }
-        // padding-left: 100px;
-        // text-align: center;
     }
 }
-
-// .main-img {
-//     text-align: center;
-//     padding-top: 15px;
-//     img {
-
-//         @include xxl {
-//             height: 500px;
-//             // width: 100%;
-//         }
-
-//         @include xl {
-//             height: 55%;
-//             width: 100%;
-//         }
-//         @include lg {
-//             height: 50%;
-//             width: 100%;
-//         }
-//         @include md {
-//             height: 100%;
-//             width: 100%;
-//         }
-//         @include sm {
-//             height: 100%;
-//             width: 100%;
-//         }
-//     }
-
-// }
 
 .main-desc-p {
     padding-left: 5vw;
     font-size: 24px;
     line-height: 1.7;
     color: $basic-color;
-    // position: relative;
-    
-    // font-family: futura-pt,sans-serif;
-    // font-weight: 300;
-    // font-style: italic;
     font-family: futura-pt,sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -123,17 +59,10 @@
         font-size: 32px;
         line-height: 1.5;
         font-weight: bold;
-        // text-align: left;
-        // color: #fff;
-        //     -webkit-text-stroke: 1px $basic-color;
-        //     text-stroke: 1px $basic-color;
-        // height: 100%;
-        // color: $basic-color;
     }
         span {
             color: #fff;
             -webkit-text-stroke: 1px $basic-color;
-            // text-stroke: 1px $basic-color;
             @include sm {
                 color: $basic-color;
                 -webkit-text-stroke: none;
@@ -142,9 +71,6 @@
 }
 
 .main-desc-second {
-    // font-family: futura-pt,sans-serif;
-    // font-weight: 300;
-    // font-style: italic;
     font-family: futura-pt,sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -153,21 +79,14 @@
     line-height: 1.7;
     color: $basic-color;
     text-align: end;
-    // padding-: ;
-    // width: 100vw;
     @include md {
-        // margin-top: 50px;
         font-weight: bold;
         font-size: 30px;
         text-align: center;
         padding: 0;
     }
     @include sm {
-        // line-height: 1.5;
-        // margin-top: 50px;
-        // padding-bottom: 50px;
         font-weight: bold;
-        // width: 200px;
         font-size: 24px;
         text-align: center;
         padding-top: 25px;
@@ -256,20 +175,6 @@
         }
     }
 
-    // music player
-
-    // *:focus
-    // {
-    //     outline: none;
-    // }
-    
-    // body
-    // {
-    //     font-family: Helvetica, Arial;
-    //     margin: 0;
-    //     background-color: #ffeff5;
-    // }
-
     .music-player-all {
         position: relative;
         align-self: flex-end;
@@ -282,58 +187,19 @@
         position: absolute;
         top: 50%;
         right: 0;
-        // left: 0;
-        // padding-left: 5vw;
-        // width: 50%;
         width: 430px;
         height: 100px;
-        // padding: 50px;
-        // margin: 10px 0px 10px 180px;
-        // background-color: #000;
-        // margin: 50px auto;
-        // margin: -4px auto;
         @include lg {
             display: none;
         }
         @include md {
             display: none;
-            // margin: 100px auto;
-            // width: 350px;
         }
 
         @include sm {
-            // width: 250px;
-            // height: 80px;
+            display: none;
         }
     }
-    
-    // #bg-artwork
-    // {
-    //     position: fixed;
-    //     top: -30px;
-    //     right: -30px;
-    //     bottom: -30px;
-    //     left: -30px;
-    //     background-image: url("https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg");
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: 50%;
-    //     filter: blur(40px);
-    //     -webkit-filter: blur(40px);
-    //     z-index: 1;
-    // }
-    
-    // #bg-layer
-    // {
-    //     position: fixed;
-    //     top: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     background-color: #fff;
-    //     opacity: 0.51;
-    //     z-index: 2;
-    // }
     
     #music-player
     {
@@ -349,8 +215,6 @@
         right: 15px;
         left: 15px;
         padding: 32px 24px 8px 160px;
-        // padding: 13px 22px 10px 184px;
-        // background-color: #fff7f7;
         border-radius: 15px 15px 0 0;
         transition: 0.3s ease top;
         z-index: 1;
@@ -376,7 +240,6 @@
         color: #acaebd;
         font-size: 13px;
         margin: 0 0 5px 0;
-        // margin: 2px 0 13px 0;
     }
     
     #track-time
@@ -400,7 +263,6 @@
     {
         color: transparent;
         font-size: 11px;
-        // background-color: #ffe8ee;
         border-radius: 10px;
         transition: 0.3s ease all;
     }
@@ -469,7 +331,6 @@
         position: relative;
         height: 100%;
         background-color: $basic-color;
-        // box-shadow: 0 30px 80px #656565;
         border: 1px solid $basic-color;
         border-radius: 15px;
         z-index: 2;
@@ -514,7 +375,6 @@
         margin: -10px auto 0 auto;
         background-color: $background-basic;
         border-radius: 50%;
-        // box-shadow: inset 0 0 0 2px #fff;
         z-index: 2;
     }
     
@@ -595,7 +455,6 @@
         width: 240px;
         height: 100%;
         margin: 10px 0;
-        // margin: 0 5px 0 141px;
         float: right;
         overflow: hidden;
         @include sm {
@@ -616,7 +475,6 @@
         height: 21px;
         padding: 15px;
         background-color: #fff;
-        // background-color: $basic-color;
         border-radius: 6px;
         cursor: pointer;
         @include sm {

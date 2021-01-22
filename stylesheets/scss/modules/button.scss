@@ -8,7 +8,6 @@
         margin-right: 25px;
         font-family: $font-family-basic;
         transition: .7s;
-        // color: #fff;
             a {
                 text-decoration: none;
                 color: #fff;
@@ -16,8 +15,6 @@
             }
             &:hover {
                 background: #fff;
-                // color: $basic-color;
-                // transition: .7s;
                 cursor: pointer;
                 a {
                     color: $basic-color;
@@ -44,14 +41,10 @@
             }
             &:hover {
                 background: #fff;
-                // color: $basic-color;
-                // transition: .7s;
                 cursor: pointer;
                 border: 1px solid $basic-gold;
                 a {
-                    // color: $basic-color;
                     color: $basic-gold;
-                    // transition: .7s;
                 }
             }
     }
@@ -79,7 +72,6 @@
             }
             &:hover {
                 background: #fff;
-                // color: $basic-color;
                 transition: .7s;
                 cursor: pointer;
                 border: 1px solid $basic-color;

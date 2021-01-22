@@ -350,6 +350,9 @@ footer {
   @media (max-width: 768px) {
     #app-cover {
       display: none; } }
+  @media (max-width: 375px) {
+    #app-cover {
+      display: none; } }
 
 #music-player {
   position: relative;
@@ -860,9 +863,6 @@ footer {
   left: 50%;
   transform: translateX(-50%); }
 
-/*================================
-           nav-laptop-line
-  ================================*/
 #about {
   background: #fafafa; }
   @media (max-width: 768px) {
@@ -1060,8 +1060,7 @@ footer {
       text-align: center; }
       .about-mobile-img img {
         width: 350px;
-        border: 15px solid #fafafa;
-        padding-bottom: 30px; } }
+        border: 20px solid #fff; } }
   @media (max-width: 768px) {
     .about-mobile-img {
       display: block;
@@ -1072,8 +1071,7 @@ footer {
     .about-mobile-img {
       display: block; }
       .about-mobile-img img {
-        width: 250px;
-        padding-bottom: 30px; } }
+        width: 250px; } }
 
 /*==============================
            scroll
@@ -1710,7 +1708,6 @@ footer {
   height: 150px;
   border: 1px solid #666B68;
   margin: 50px;
-  /*   font-family: 'Cinzel', serif; */
   font-size: 24px;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
