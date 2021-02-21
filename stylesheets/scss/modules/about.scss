@@ -108,16 +108,16 @@
         margin-right: 5px;
     }
     @include lg {
-        text-align: center;
+        // text-align: center;
         margin: 0 auto;
     }
     @include md {
-        text-align: center;
+        // text-align: center;
         margin: 0 auto;
     }
     @include sm {
         width: 100%;
-        text-align: justify;
+        // text-align: justify;
     }
 }
 

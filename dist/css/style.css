@@ -963,16 +963,13 @@ footer {
     margin-right: 5px; }
   @media (max-width: 1024px) {
     .about-title-p {
-      text-align: center;
       margin: 0 auto; } }
   @media (max-width: 768px) {
     .about-title-p {
-      text-align: center;
       margin: 0 auto; } }
   @media (max-width: 375px) {
     .about-title-p {
-      width: 100%;
-      text-align: justify; } }
+      width: 100%; } }
 
 .about-links {
   color: #666B68;
