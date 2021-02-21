@@ -958,7 +958,9 @@ footer {
   width: 70%;
   margin-top: 10px;
   padding: 15px 0px;
-  line-height: 1.3; }
+  line-height: 1.8; }
+  .about-title-p i {
+    margin-right: 5px; }
   @media (max-width: 1024px) {
     .about-title-p {
       text-align: center;
