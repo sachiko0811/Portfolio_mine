@@ -1617,9 +1617,6 @@ footer {
   border-radius: 50%;
   margin-top: 5px; }
 
-/*====================================
-            POP UP
-====================================*/
 .popup-stop-scroll {
   height: 100%;
   overflow: hidden; }
@@ -1786,6 +1783,13 @@ footer {
 .btns:hover {
   background: #fff; }
 
+/* 
+** Layout, Text & Colors 
+*/
+/* body {
+  background: #150f21;
+  font-size: 18px;
+} */
 .section-main {
   display: flex;
   flex-direction: column;
