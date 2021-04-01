@@ -1158,53 +1158,51 @@ footer {
     @media (max-width: 2000px) {
       .skills-icon i {
         padding: 20px;
-        font-size: 24px; } }
+        font-size: 64px; } }
     @media (max-width: 1440px) {
       .skills-icon i {
         padding: 20px;
-        font-size: 24px; } }
+        font-size: 48px; } }
     @media (max-width: 768px) {
       .skills-icon i {
         padding: 15px;
-        font-size: 20px; } }
+        font-size: 24px; } }
     @media (max-width: 375px) {
       .skills-icon i {
         padding: 10px;
-        font-size: 18px; } }
-    .skills-icon i:hover {
-      transform: scale(1.5); }
+        font-size: 16px; } }
 
 /*==============================
             icons
 ==============================*/
-.fa-html5:hover {
+.fa-html5 {
   color: #E44D26; }
 
-.fa-css3-alt:hover {
+.fa-css3-alt {
   color: #3573B5; }
 
-.fa-sass:hover {
+.fa-sass {
   color: #cd6799; }
 
-.fa-js-square:hover {
+.fa-js-square {
   color: #f0d64f; }
 
-.fa-react:hover {
+.fa-react {
   color: #61dbfb; }
 
-.fa-wordpress:hover {
+.fa-wordpress {
   color: #00669e; }
 
-.fa-git-alt:hover {
+.fa-git-alt {
   color: #f1502f; }
 
-.fa-docker:hover {
+.fa-docker {
   color: #2189e6; }
 
-.fa-aws:hover {
+.fa-aws {
   color: #ff9124; }
 
-.fa-adobe:hover {
+.fa-adobe {
   color: #E63523; }
 
 .fa-smile:hover {

@@ -49,23 +49,23 @@
             transition: .5s;
             @include xxl {
                 padding: 20px;
-                font-size: 24px;
+                font-size: 64px;
             }
             @include xl {
                 padding: 20px;
-                font-size: 24px;
+                font-size: 48px;
             }
             @include md {
                 padding: 15px;
-                font-size: 20px;
+                font-size: 24px;
             }
             @include sm {
                 padding: 10px;
-                font-size: 18px;
+                font-size: 16px;
             }
-                &:hover {
-                    transform: scale(1.5);
-                }
+                // &:hover {
+                //     transform: scale(1.5);
+                // }
             
         }
 }
@@ -73,64 +73,43 @@
             icons
 ==============================*/
 .fa-html5 {
-    &:hover {
-        color: #E44D26;
-    }
+    color: #E44D26;
 }
 
 .fa-css3-alt {
-    &:hover {
-        color: #3573B5;
-    }
+    color: #3573B5;
 }
 
 .fa-sass {
-    &:hover {
-        color: #cd6799;
-    }
+    color: #cd6799;;
 }
 
 .fa-js-square {
-    &:hover {
-        color: #f0d64f;
-    }
+    color: #f0d64f;
 }
 
 .fa-react {
-    &:hover {
-        color: #61dbfb;
-    }
+    color: #61dbfb;
 }
 
 .fa-wordpress {
-
-    &:hover {
-        color: #00669e;
-    }
+    color: #00669e;
 }
 
 .fa-git-alt {
-    &:hover {
-        color: #f1502f;
-    }
+    color: #f1502f;
 }
 
 .fa-docker {
-    &:hover {
-        color: #2189e6;
-    }
+    color: #2189e6;
 }
 
 .fa-aws {
-    &:hover {
-        color: #ff9124;
-    }
+    color: #ff9124;
 }
 
 .fa-adobe {
-    &:hover {
-        color: #E63523;
-    }
+    color: #E63523;
 }
 
 .fa-smile {
