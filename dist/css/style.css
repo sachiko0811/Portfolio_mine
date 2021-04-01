@@ -1162,7 +1162,7 @@ footer {
     @media (max-width: 1440px) {
       .skills-icon i {
         padding: 20px;
-        font-size: 48px; } }
+        font-size: 40px; } }
     @media (max-width: 768px) {
       .skills-icon i {
         padding: 15px;
@@ -1210,23 +1210,23 @@ footer {
 
 @media (max-width: 2000px) {
   .skills-details {
-    padding-top: 10vh;
-    padding-bottom: 10vh; } }
+    padding-top: 5vh;
+    padding-bottom: 5vh; } }
 
 @media (max-width: 1440px) {
   .skills-details {
-    padding-top: 10vh;
-    padding-bottom: 10vh; } }
+    padding-top: 5vh;
+    padding-bottom: 5vh; } }
 
 @media (max-width: 768px) {
   .skills-details {
-    padding-top: 10vh;
-    padding-bottom: 10vh; } }
+    padding-top: 5vh;
+    padding-bottom: 5vh; } }
 
 @media (max-width: 375px) {
   .skills-details {
-    padding-top: 10vh;
-    padding-bottom: 10vh; } }
+    padding-top: 5vh;
+    padding-bottom: 5vh; } }
 
 @media (max-width: 768px) {
   .skills-detail {

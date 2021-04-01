@@ -53,7 +53,7 @@
             }
             @include xl {
                 padding: 20px;
-                font-size: 48px;
+                font-size: 40px;
             }
             @include md {
                 padding: 15px;
@@ -120,21 +120,21 @@
 
 .skills-details {
     @include xxl {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     @include xl {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
 
     @include md {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
     @include sm {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
 }
 
