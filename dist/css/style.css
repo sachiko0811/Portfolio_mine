@@ -1504,9 +1504,6 @@ footer {
     @media (max-width: 768px) {
       .works-card-img img {
         width: 300px; } }
-    @media (max-width: 375px) {
-      .works-card-img img {
-        width: 150px; } }
 
 .works-card-desc {
   padding: 20px; }
