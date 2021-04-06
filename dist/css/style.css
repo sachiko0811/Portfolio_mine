@@ -1488,13 +1488,19 @@ footer {
   color: #666B68; }
 
 .works-card {
-  border: 1px solid #666B68;
   width: 40%;
   margin: 10px;
   padding: 20px; }
   @media (max-width: 768px) {
     .works-card {
       width: 100%; } }
+  .works-card h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: center; }
+    @media (max-width: 375px) {
+      .works-card h1 {
+        font-size: 24px; } }
 
 .works-card-img {
   width: 100%;
@@ -1504,16 +1510,6 @@ footer {
     @media (max-width: 768px) {
       .works-card-img img {
         width: 300px; } }
-
-.works-card-desc {
-  padding: 20px; }
-  .works-card-desc h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center; }
-  .works-card-desc p {
-    margin-bottom: 10px;
-    text-align: center; }
 
 .works-card-icons {
   padding: 20px;
