@@ -1495,9 +1495,20 @@ footer {
     .works-card {
       width: 100%; } }
   .works-card h1 {
+    font-weight: bold;
     font-size: 26px;
-    margin-bottom: 10px;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    padding: 10px; }
+    .works-card h1:before {
+      position: absolute;
+      bottom: -5px;
+      left: calc(50% - 30px);
+      width: 60px;
+      height: 3px;
+      content: '';
+      border-radius: 1.5px;
+      background: #666B68; }
     @media (max-width: 375px) {
       .works-card h1 {
         font-size: 24px; } }
