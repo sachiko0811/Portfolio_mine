@@ -1511,7 +1511,9 @@ footer {
       background: #666B68; }
     @media (max-width: 375px) {
       .works-card h1 {
-        font-size: 24px; } }
+        font-size: 24px;
+        max-width: 200px;
+        margin: 0 auto; } }
 
 .works-card-img {
   width: 100%;
