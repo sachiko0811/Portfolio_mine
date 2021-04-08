@@ -1,0 +1,58 @@
+#passion {
+    padding: 120px 10vw 50px;
+    margin-top: 100px;
+    @include md {
+      padding-top: 120px;
+    }
+    @include sm {
+      padding-top: 120px;
+    }
+}
+
+.section-passion {
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        padding: 10vh 0;
+        color: $basic-color;
+
+        @include xxl {
+          font-size: 36px;
+          padding: 5vh 0;
+        }
+        @include xl {
+          font-size: 36px;
+          padding: 5vh 0;
+        }
+        @include lg {
+          font-size: 20px;
+          padding: 5vh 0;
+        }
+        @include md {
+          font-size: 28px;
+          padding: 5vh 0;
+        }
+        @include sm {
+          font-size: 24px;
+          padding: 5vh 0;
+        }
+    }
+}
+
+.passion-img-all {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.passion-img img{
+    width: 200px;
+    @include lg {
+        width: 150px;
+    }
+    @include md {
+        width: 100px;
+    }
+    @include sm {
+        width: 64px;
+    }
+}
