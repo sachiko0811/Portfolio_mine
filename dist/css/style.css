@@ -1643,6 +1643,9 @@ footer {
   justify-content: center;
   flex-wrap: wrap; }
 
+.passion-img [tooltip]::after {
+  box-shadow: none; }
+
 .passion-img img {
   width: 200px; }
   @media (max-width: 1024px) {

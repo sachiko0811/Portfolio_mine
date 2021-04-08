@@ -44,6 +44,12 @@
     flex-wrap: wrap;
 }
 
+.passion-img {
+    [tooltip]::after {
+        box-shadow: none;
+    }
+}
+
 .passion-img img{
     width: 200px;
     @include lg {
