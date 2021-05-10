@@ -108,16 +108,15 @@
         margin-right: 5px;
     }
     @include lg {
-        // text-align: center;
+        width: 55%;
         margin: 0 auto;
     }
     @include md {
-        // text-align: center;
+        width: 70%;
         margin: 0 auto;
     }
     @include sm {
         width: 100%;
-        // text-align: justify;
     }
 }
 
@@ -245,8 +244,7 @@
            scroll
 ==============================*/
 
-/*1.フェードインアニメーションの指定*/
-.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.scrollanime {opacity: 0;}
 .fadeInDown {
     animation-name: fadeInDown;
     animation-duration: 3s;
@@ -264,11 +262,9 @@
     }
 }
 
-/*2.上下の動きを指定*/
 .updown {transform: translateY(-100px);}
 .downup {transform: translateY(100px);}
 
-/*3.左右の動きを指定*/
-.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
+.sect02{overflow: hidden;}
 .slide-right {transform: translateX(200px);}
 .slide-left {transform: translateX(-200px);}
