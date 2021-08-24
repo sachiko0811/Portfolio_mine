@@ -986,7 +986,8 @@ footer {
     .about-links {
       font-size: 1.5rem;
       padding: 20px;
-      text-align-last: justify; } }
+      display: flex;
+      justify-content: center; } }
   .about-links i {
     padding: 10px;
     color: #666B68;
